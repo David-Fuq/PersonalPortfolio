@@ -1,0 +1,5 @@
+{
+  "name": "Personal Portfolio",
+  "description": "A personal portfolio website with a dark mode toggle, animated home page, and timeline-based sections for experience, education, and more.",
+  "requestFramePermissions": []
+}
