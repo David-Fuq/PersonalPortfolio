@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, type ReactNode } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X } from 'lucide-react';
 import Image from 'next/image';
@@ -11,7 +11,7 @@ export type TimelineItem = {
   subtitle: string;
   date: string;
   brief: string;
-  details: string;
+  details: ReactNode;
   imageUrl?: string;
 };
 

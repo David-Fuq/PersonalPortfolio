@@ -3,31 +3,33 @@ import { Timeline, TimelineItem } from '@/components/timeline';
 const publicationItems: TimelineItem[] = [
   {
     id: 'pub-1',
-    title: 'A Novel Approach to Machine Learning',
-    subtitle: 'Journal of Artificial Intelligence',
-    date: '2023',
-    brief: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-    details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    imageUrl: 'https://picsum.photos/seed/pub1/100/100',
+    title: 'Recreating the V-JEPA 2-AC Architecture for Self-Supervised Video Models',
+    subtitle: 'Séneca Repositorio Institucional - Universidad de los Andes',
+    date: 'Jan 2026',
+    brief: 'Undergraduate Thesis',
+    details: (
+      <>
+        Available{' '}
+        <a
+          href="https://hdl.handle.net/1992/77925"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary underline underline-offset-4"
+        >
+          here
+        </a>
+        .
+        <br />
+        <br />
+        This project recreates the V-JEPA 2-AC architecture to better understand its self-supervised video learning and action-conditioned prediction capabilities. By analyzing the official Meta implementation, a fully functional local reproduction of both the pretraining and post-training stages was developed, along with a simplified variant of the post-training predictor.
+        <br />
+        <br />
+        Using a curated 206-video robotic dataset, all architectures were evaluated on their ability to infer plausible next actions from an initial and a goal frame. The results illustrate the feasibility of reproducing V-JEPA 2-AC locally, highlight the trade-offs introduced by simplification, and provide insight into how energy-based prediction landscapes guide robotic action selection.
+      </>
+    ),
+    imageUrl: '/University_of_Los_Andes_logo.svg',
   },
-  {
-    id: 'pub-2',
-    title: 'Optimizing Web Performance in React',
-    subtitle: 'International Web Conference',
-    date: '2021',
-    brief: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
-    details: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.\n\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    imageUrl: 'https://picsum.photos/seed/pub2/100/100',
-  },
-  {
-    id: 'pub-3',
-    title: 'The Future of Frontend Frameworks',
-    subtitle: 'Tech Insights Magazine',
-    date: '2019',
-    brief: 'Duis aute irure dolor in reprehenderit in voluptate velit.',
-    details: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-    imageUrl: 'https://picsum.photos/seed/pub3/100/100',
-  },
+  
 ];
 
 export default function Publications() {

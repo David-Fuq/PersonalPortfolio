@@ -71,7 +71,7 @@ export default function Home() {
         <div className="relative w-48 h-48 md:w-64 md:h-64 shrink-0">
           <div className="absolute inset-0 bg-gradient-to-tr from-primary to-primary/20 rounded-full blur-2xl opacity-50 animate-pulse" />
           <Image
-            src="https://picsum.photos/seed/portrait/400/400"
+            src="/david.jpg"
             alt="Profile Picture"
             fill
             className="rounded-full object-cover border-4 border-background relative z-10 shadow-xl"
@@ -84,7 +84,7 @@ export default function Home() {
             Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-foreground to-foreground/50">David Alejandro Fuquen Flórez</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed">
-            Software Engineer at Canals, Adjunct Lecturer at Universidad de los Andes, and member of Cornell Cup Robotics. B.E. in Systems and Computing Engineering with a minor in Physics. Passionate about software development, robotics, and education.
+            Software Engineer at Canals, Adjunct Lecturer at Universidad de los Andes, and member of Cornell Cup Robotics. Cum Laude B.E. in Systems and Computing Engineering with a minor in Physics. Passionate about software development, robotics, ML, and education.
           </p>
         </div>
       </motion.section>
