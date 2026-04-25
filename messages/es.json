@@ -1,0 +1,223 @@
+{
+  "metadata": {
+    "title": "David Alejandro Fuquen Flórez - Portafolio",
+    "description": "Ingeniero de software en Canals, profesor universitario en la Universidad de los Andes y miembro del equipo Cornell Cup Robotics."
+  },
+  "nav": {
+    "home": "Inicio",
+    "workExperience": "Experiencia Laboral",
+    "education": "Educación",
+    "awards": "Reconocimientos",
+    "teaching": "Docencia",
+    "publications": "Publicaciones",
+    "portfolio": "Portafolio"
+  },
+  "header": {
+    "linkedin": "LinkedIn",
+    "contact": "Contacto",
+    "toggleTheme": "Cambiar tema",
+    "toggleLanguage": "Cambiar idioma"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "David Alejandro Fuquen Flórez",
+    "bio": "Ingeniero de software en Canals, profesor universitario en la Universidad de los Andes y miembro del equipo Cornell Cup Robotics. Ingeniería de Sistemas y Computación con opción en Física. Apasionado por el desarrollo de software, la robótica y la educación.",
+    "profileAlt": "David Alejandro Fuquen Flórez"
+  },
+  "sections": {
+    "workExperience": {
+      "title": "Experiencia Laboral",
+      "description": "Ingeniería de software, pasantías de investigación y proyectos de robótica en Canals, Cornell University y Precia PPV."
+    },
+    "education": {
+      "title": "Educación",
+      "description": "Ingeniería en Sistemas y Computación de la Universidad de los Andes, con estudios internacionales en el Politecnico di Milano."
+    },
+    "awards": {
+      "title": "Reconocimientos",
+      "description": "Reconocimientos que incluyen el premio Expoandes por un reconocedor de lenguaje de señas con IA y participación en olimpiadas nacionales."
+    },
+    "teaching": {
+      "title": "Docencia",
+      "description": "De tutor a docente universitario, con experiencia gestionando más de 40 tutores y enseñando a más de 1500 estudiantes en Uniandes."
+    },
+    "publications": {
+      "title": "Publicaciones",
+      "description": "Publicaciones académicas y de investigación."
+    }
+  },
+  "workExperience": {
+    "pageTitle": "Experiencia Laboral",
+    "pageSubtitle": "Roles profesionales en ingeniería de software, investigación y robótica en la industria y la academia.",
+    "items": {
+      "work1": {
+        "title": "Ingeniero de Software",
+        "subtitle": "Canals",
+        "date": "Ene 2026 - Presente",
+        "brief": "Ingeniero de software para el equipo de Cuentas por Pagar.",
+        "details": "Ingeniero de software para el equipo de Cuentas por Pagar."
+      },
+      "work2": {
+        "title": "Profesor Universitario - Introducción a la Programación con Python",
+        "subtitle": "Universidad de los Andes",
+        "date": "Ene 2026 - Presente",
+        "brief": "Instructor principal de un curso de 25 estudiantes, rol normalmente reservado para docentes de posgrado.",
+        "details": "Instructor Principal — Introducción a la Programación con Python.\n\nDicto clases para un curso de 25 estudiantes sobre conceptos fundamentales de programación usando Python.\n\nSeleccionado para un rol de instrucción principal normalmente reservado para docentes de nivel de posgrado.\n\nDicto clases, diseño exámenes y tareas de programación, y coordino sesiones semanales de laboratorio con dos monitores."
+      },
+      "work3": {
+        "title": "Miembro del Equipo Cornell Cup Robotics",
+        "subtitle": "Cornell University",
+        "date": "Ago 2025 - Presente",
+        "brief": "Trabajando en el proyecto ISS microMimic, una variante XRP que recibe telemetría en tiempo real de la Estación Espacial Internacional.",
+        "details": "Actualmente trabajando con Cornell en el proyecto ISS microMimic: una variante XRP que recibe telemetría en tiempo real de la Estación Espacial Internacional. Nuestro trabajo fue exhibido recientemente en el museo del MIT."
+      },
+      "work4": {
+        "title": "Pasante de Investigación de Verano - SURF",
+        "subtitle": "Cornell University",
+        "date": "Jun 2025 - Ago 2025",
+        "brief": "Desarrollé funcionalidades robóticas XRP y guías educativas para cursos reconocidos por INCOSE como equivalente a un examen de conocimiento.",
+        "details": "Desarrollé funcionalidades robóticas XRP y una guía educativa para los cursos Cornell SYSEN5920 y 5100, la primera experiencia en el mundo reconocida por INCOSE como equivalente a un examen de conocimiento.\n\nContribuí a la creación de componentes del sistema educativo robótico XRP, utilizado actualmente en más de 180 países con el apoyo de FIRST, Raspberry Pi, SparkFun, Lockheed Martin, NASA, Boeing, entre otros.\n\nDiseñé e implementé una interfaz gráfica para el AgXRP, una plataforma autónoma de código abierto para explorar la automatización, la robótica y la agricultura de precisión. Construí tanto el protocolo de comunicación como una aplicación web completamente funcional que permite el control serial por USB del sistema.\n\nNuestro trabajo fue presentado en la reunión de la Asociación Nacional de Gobernadores en febrero de 2026, ante los 50 gobernadores de EE. UU. y el Secretario de Educación."
+      },
+      "work5": {
+        "title": "Pasante de Ingeniería de Sistemas y Computación",
+        "subtitle": "Precia PPV S.A.",
+        "date": "Ene 2025 - May 2025",
+        "brief": "Optimicé servicios de AWS y desarrollé dashboards en Power BI para el análisis de datos de la Bolsa de Valores de Colombia.",
+        "details": "Optimicé código existente en servicios de AWS como Lambda y Glue, mejorando el rendimiento y la eficiencia.\n\nContribuí al desarrollo de dashboards interactivos en Power BI para analizar y visualizar datos de la Bolsa de Valores de Colombia.\n\nJugué un papel clave en el equipo de tecnología, contribuyendo a soluciones de valoración líderes en la industria para Colombia."
+      },
+      "work6": {
+        "title": "Asistente de Investigación de Pregrado - Arquitectura Empresarial",
+        "subtitle": "Universidad de los Andes",
+        "date": "Ago 2024 - Ene 2025",
+        "brief": "Asistente de investigación bajo la dirección del Profesor Jorge Villalobos, Ph.D., creando exámenes e investigando Arquitectura Empresarial.",
+        "details": "Asistente de investigación bajo la dirección del Profesor Jorge Villalobos, Ph.D.\n\nResponsable de la creación de exámenes para el nuevo curso \"Arquitectura Empresarial\" de la Maestría \"MAIT - Maestría en Gerencia de Tecnologías de Información\" de la Universidad de los Andes.\n\nRealicé investigación teórica sobre Arquitectura Empresarial."
+      }
+    }
+  },
+  "education": {
+    "pageTitle": "Educación",
+    "pageSubtitle": "Ingeniería en Sistemas y Computación de la Universidad de los Andes, con estudios internacionales en el Politecnico di Milano.",
+    "items": {
+      "edu1": {
+        "title": "Ingeniería de Sistemas y Computación",
+        "subtitle": "Universidad de los Andes",
+        "date": "Ago 2020 - Abr 2026",
+        "brief": "Ingeniería con opción en Física en una de las mejores universidades de América Latina.",
+        "details": "Ingeniería de Sistemas y Computación con opción en Física."
+      },
+      "edu2": {
+        "title": "Programa de Estudios Internacionales",
+        "subtitle": "Politecnico di Milano",
+        "date": "Feb 2024 - Jul 2024",
+        "brief": "Intercambio internacional con materias en Aprendizaje Automático, IoT y Robótica.",
+        "details": "Programa de Estudios Internacionales en el Politecnico di Milano.\n\nMaterias relevantes:\n- Aprendizaje Automático\n- Internet de las Cosas\n- Robótica"
+      },
+      "edu3": {
+        "title": "Bachillerato",
+        "subtitle": "Colegio San Jorge de Inglaterra - Saint George's School",
+        "date": "Graduado Jun 2020",
+        "brief": "Salutatorian — estudiante con el segundo promedio más alto de la promoción.",
+        "details": "Salutatorian, estudiante con el segundo promedio académico más alto de la promoción 2020.\n\nActividades:\n- Prefecto (2020-2021)\n- Presidente de Comité COP en Bogotá y SGSMUN (2018-2019)\n- Segundo chelo en la Orquesta Sinfónica (2008-2020)\n- Capitán del equipo de atletismo (2020)\n- Equipo de baloncesto (2010-2020)"
+      }
+    }
+  },
+  "awards": {
+    "pageTitle": "Reconocimientos",
+    "pageSubtitle": "Competencias académicas y reconocimientos en ingeniería, física, matemáticas y ciencias.",
+    "items": {
+      "award1": {
+        "title": "Participante de \"La Muestra\" - Ingeniería de Sistemas y Computación",
+        "subtitle": "Universidad de los Andes",
+        "date": "Nov 2023",
+        "brief": "Presenté \"BoGoPlan\", una app de emparejamiento de eventos culturales construida con Aprendizaje Automático.",
+        "details": "\"BoGoPlan\" — Software de emparejamiento de eventos culturales construido con Aprendizaje Automático.\n\nhttps://youtu.be/xXw-wnFHIf4"
+      },
+      "award2": {
+        "title": "Ganador de \"Expoandes\" - Ingeniería de Sistemas y Computación",
+        "subtitle": "Universidad de los Andes",
+        "date": "May 2022",
+        "brief": "Ganador con \"Comunicarnos\", un reconocedor de lenguaje de señas con IA construido con Python y TensorFlow.",
+        "details": "\"Comunicarnos\" — Reconocedor de lenguaje de señas mediante inteligencia artificial con Python y TensorFlow.\n\nhttps://youtu.be/96kEChyVPas"
+      },
+      "award3": {
+        "title": "Puesto 11 - Olimpiadas Nacionales de Física",
+        "subtitle": "Universidad Antonio Nariño",
+        "date": "2019",
+        "brief": "Puesto 11 general en las Olimpiadas Nacionales de Física.",
+        "details": "Puesto 11 general en las Olimpiadas Nacionales de Física de la Universidad Antonio Nariño."
+      },
+      "award4": {
+        "title": "Mejor Participante del Colegio - Olimpiadas Nacionales de Matemáticas",
+        "subtitle": "Universidad Antonio Nariño",
+        "date": "2019",
+        "brief": "Mejor participante del Colegio San Jorge en las Olimpiadas Nacionales de Matemáticas.",
+        "details": "Mejor participante del Colegio San Jorge de Inglaterra en las Olimpiadas Nacionales de Matemáticas de la Universidad Antonio Nariño."
+      },
+      "award5": {
+        "title": "Puesto 13 - Olimpiadas Nacionales de Ciencias",
+        "subtitle": "Universidad Antonio Nariño",
+        "date": "2018",
+        "brief": "Puesto 13 general en las Olimpiadas Nacionales de Ciencias.",
+        "details": "Puesto 13 general en las Olimpiadas Nacionales de Ciencias de la Universidad Antonio Nariño."
+      }
+    }
+  },
+  "teaching": {
+    "pageTitle": "Docencia",
+    "pageSubtitle": "De tutor a docente universitario — enseñando programación y tecnología en la Universidad de los Andes.",
+    "items": {
+      "teaching1": {
+        "title": "Profesor Universitario - Introducción a la Programación con Python",
+        "subtitle": "Universidad de los Andes",
+        "date": "Ene 2026 - Presente",
+        "brief": "Instructor principal de un curso de 25 estudiantes, rol normalmente reservado para docentes de posgrado.",
+        "details": "Instructor Principal — Introducción a la Programación con Python.\n\nDicto clases para un curso de 25 estudiantes sobre conceptos fundamentales de programación usando Python.\n\nSeleccionado para un rol de instrucción principal normalmente reservado para docentes de nivel de posgrado.\n\nDicto clases, diseño exámenes y tareas de programación, y coordino sesiones semanales de laboratorio con dos monitores."
+      },
+      "teaching2": {
+        "title": "Asistente de Investigación de Pregrado - CupiTaller",
+        "subtitle": "Universidad de los Andes",
+        "date": "Ago 2024 - Feb 2026",
+        "brief": "Gestioné el centro de apoyo de programación, coordinando 40 tutores y 70 monitores atendiendo a más de 1500 estudiantes.",
+        "details": "Miembro del equipo de 7 personas responsable de la gestión y supervisión operativa de CupiTaller, el centro de apoyo de programación de la Universidad de los Andes, bajo la dirección del Profesor Eduardo Rosales, Ph.D.\n\nGestioné los cursos \"Programación en Python\" e \"Introducción a la Programación Orientada a Objetos en Java\" ofrecidos públicamente por la Universidad de los Andes en Coursera.\n\nResponsable de gestionar los horarios de aproximadamente 40 tutores y 70 monitores, supervisando un sistema que permitió a más de 1500 estudiantes agendar sesiones de tutoría.\n\nCreé conjuntos de problemas de programación y verificación automática de soluciones para Senecode, la plataforma de problemas de programación de la Universidad.\n\nRealicé entrevistas para evaluar candidatos a posiciones de tutor.\n\nMantuve un bot de Discord (escrito en TypeScript) para facilitar sesiones de tutoría remota.\n\nFui parte del equipo que lideró el diseño, desarrollo y mantenimiento de CupiMonitores, una aplicación web (backend: NestJS, frontend: Next.js) que provee todos los endpoints necesarios para gestionar monitores, incluyendo consulta de información, calificación y control de acceso para diferentes roles de usuario."
+      },
+      "teaching3": {
+        "title": "Monitor de Pregrado - Tecnologías de Información para las Organizaciones",
+        "subtitle": "Universidad de los Andes",
+        "date": "Ago 2023 - Dic 2023",
+        "brief": "Monitor de TI para las Organizaciones, calificando evaluaciones y dictando clases mensuales.",
+        "details": "Monitor de pregrado para Tecnologías de Información para las Organizaciones.\n\nCorregí y califiqué talleres y evaluaciones.\n\nDicté clases mensuales sobre conceptos clave de la materia."
+      },
+      "teaching4": {
+        "title": "Monitor - Introducción a la Programación",
+        "subtitle": "Universidad de los Andes",
+        "date": "Ene 2021 - Dic 2023",
+        "brief": "Monitor de Introducción a la Programación, apoyando a ~40 estudiantes por laboratorio y calificando proyectos.",
+        "details": "Monitor de pregrado para Introducción a la Programación bajo la dirección de múltiples profesores.\n\nApoyé al profesor durante los laboratorios de programación, asistiendo a aproximadamente 40 estudiantes.\n\nCorregí y califiqué proyectos básicos de programación."
+      },
+      "teaching5": {
+        "title": "Tutor - CupiTaller",
+        "subtitle": "Universidad de los Andes",
+        "date": "Feb 2023 - Jun 2023",
+        "brief": "Tutor de Python en el centro de apoyo de programación de la Universidad, asistiendo a más de 80 estudiantes.",
+        "details": "Tutor de Python en CupiTaller, el centro de apoyo de programación de la Universidad de los Andes para estudiantes en su primer o segundo curso de programación.\n\nRealicé sesiones de tutoría diarias.\n\nAsistí a más de 80 estudiantes en el desarrollo de habilidades fundamentales de programación en Python."
+      }
+    }
+  },
+  "publications": {
+    "pageTitle": "Publicaciones",
+    "pageSubtitle": "Publicaciones académicas y de investigación.",
+    "items": {
+      "pub1": {
+        "title": "Recreando la Arquitectura V-JEPA 2-AC para Modelos de Video con Aprendizaje Autosupervisado",
+        "subtitle": "Séneca Repositorio Institucional - Universidad de los Andes",
+        "date": "Ene 2026",
+        "brief": "Tesis de Pregrado",
+        "details": {
+          "availableText": "Disponible",
+          "linkText": "aquí",
+          "body": "Este proyecto recrea la arquitectura V-JEPA 2-AC para comprender mejor sus capacidades de aprendizaje autosupervisado en video y predicción condicionada por acciones. Mediante el análisis de la implementación oficial de Meta, se desarrolló una reproducción local completamente funcional de las etapas de preentrenamiento y postentrenamiento, junto con una variante simplificada del predictor de postentrenamiento.\n\nUsando un conjunto de datos de 206 videos robóticos, se evaluaron todas las arquitecturas en su capacidad para inferir acciones plausibles a partir de un frame inicial y uno objetivo. Los resultados ilustran la viabilidad de reproducir V-JEPA 2-AC localmente, destacan los compromisos introducidos por la simplificación y brindan perspectiva sobre cómo los paisajes de predicción basados en energía guían la selección de acciones robóticas."
+        }
+      }
+    }
+  }
+}

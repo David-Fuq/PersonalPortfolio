@@ -1,47 +1,10 @@
 'use client';
 
 import Image from 'next/image';
-import Link from 'next/link';
+import { Link } from '@/i18n/navigation';
 import { motion, Variants } from 'motion/react';
 import { Briefcase, GraduationCap, Trophy, BookOpen, FileText } from 'lucide-react';
-
-const sections = [
-  {
-    title: 'Work Experience',
-    description: 'Software engineering, research internships, and robotics projects at Canals, Cornell University, and Precia PPV.',
-    icon: Briefcase,
-    href: '/work-experience',
-    color: 'bg-blue-500/10 text-blue-500 border-blue-500/20',
-  },
-  {
-    title: 'Education',
-    description: 'B.E. in Systems and Computing Engineering from Universidad de los Andes, with international studies at Politecnico di Milano.',
-    icon: GraduationCap,
-    href: '/education',
-    color: 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20',
-  },
-  {
-    title: 'Awards',
-    description: 'Recognitions including Expoandes winner for an AI-powered sign language recognizer and national olympiad placements.',
-    icon: Trophy,
-    href: '/awards',
-    color: 'bg-amber-500/10 text-amber-500 border-amber-500/20',
-  },
-  {
-    title: 'Teaching',
-    description: 'From Python tutor to Adjunct Lecturer, with experience managing 40+ tutors and teaching 1500+ students at Uniandes.',
-    icon: BookOpen,
-    href: '/teaching',
-    color: 'bg-purple-500/10 text-purple-500 border-purple-500/20',
-  },
-  {
-    title: 'Publications',
-    description: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
-    icon: FileText,
-    href: '/publications',
-    color: 'bg-rose-500/10 text-rose-500 border-rose-500/20',
-  },
-];
+import { useTranslations } from 'next-intl';
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -59,10 +22,50 @@ const itemVariants: Variants = {
 };
 
 export default function Home() {
+  const t = useTranslations();
+
+  const sections = [
+    {
+      title: t('sections.workExperience.title'),
+      description: t('sections.workExperience.description'),
+      icon: Briefcase,
+      href: '/work-experience',
+      color: 'bg-blue-500/10 text-blue-500 border-blue-500/20',
+    },
+    {
+      title: t('sections.education.title'),
+      description: t('sections.education.description'),
+      icon: GraduationCap,
+      href: '/education',
+      color: 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20',
+    },
+    {
+      title: t('sections.awards.title'),
+      description: t('sections.awards.description'),
+      icon: Trophy,
+      href: '/awards',
+      color: 'bg-amber-500/10 text-amber-500 border-amber-500/20',
+    },
+    {
+      title: t('sections.teaching.title'),
+      description: t('sections.teaching.description'),
+      icon: BookOpen,
+      href: '/teaching',
+      color: 'bg-purple-500/10 text-purple-500 border-purple-500/20',
+    },
+    {
+      title: t('sections.publications.title'),
+      description: t('sections.publications.description'),
+      icon: FileText,
+      href: '/publications',
+      color: 'bg-rose-500/10 text-rose-500 border-rose-500/20',
+    },
+  ];
+
   return (
     <div className="flex flex-col items-center justify-center min-h-[calc(100vh-8rem)] py-12">
       {/* Hero Section */}
-      <motion.section 
+      <motion.section
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
@@ -71,8 +74,8 @@ export default function Home() {
         <div className="relative w-48 h-48 md:w-64 md:h-64 shrink-0">
           <div className="absolute inset-0 bg-gradient-to-tr from-primary to-primary/20 rounded-full blur-2xl opacity-50 animate-pulse" />
           <Image
-            src="/david.jpg"
-            alt="Profile Picture"
+            src="https://picsum.photos/seed/portrait/400/400"
+            alt={t('hero.profileAlt')}
             fill
             className="rounded-full object-cover border-4 border-background relative z-10 shadow-xl"
             referrerPolicy="no-referrer"
@@ -81,10 +84,13 @@ export default function Home() {
         </div>
         <div className="text-center md:text-left space-y-4">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            Hi, I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-foreground to-foreground/50">David Alejandro Fuquen Flórez</span>
+            {t('hero.greeting')}{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-foreground to-foreground/50">
+              {t('hero.name')}
+            </span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed">
-            Software Engineer at Canals, Adjunct Lecturer at Universidad de los Andes, and member of Cornell Cup Robotics. Cum Laude B.E. in Systems and Computing Engineering with a minor in Physics. Passionate about software development, robotics, ML, and education.
+            {t('hero.bio')}
           </p>
         </div>
       </motion.section>
