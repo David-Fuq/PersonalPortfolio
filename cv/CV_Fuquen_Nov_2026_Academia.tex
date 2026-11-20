@@ -18,7 +18,12 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 
-\pagestyle{empty}
+% Footer: note about hyperlinks, shown on the last page only (sits in the bottom margin)
+\usepackage{fancyhdr}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\ifnum\value{page}=2 \footnotesize\textit{Note: underlined text is a clickable link to the related website, repository, thesis, or email address.}\fi}
+\pagestyle{fancy}
 
 % Margins
 \addtolength{\oddsidemargin}{-0.6in}
@@ -43,7 +48,8 @@
 \newcommand{\resumeItem}[1]{\item\small{#1\vspace{-2pt}}}
 
 % Underlined hyperlink
-\newcommand{\link}[2]{\href{#1}{\underline{#2}}}
+\usepackage[normalem]{ulem} % underlines that can break across lines
+\newcommand{\link}[2]{\href{#1}{\uline{#2}}}
 % Placeholder link. To fill in, add the URL as an optional argument:
 %   \todolink{AgXRP}  ->  \todolink[https://github.com/...]{AgXRP}
 \newcommand{\todolink}[2][https://example.com]{\href{#1}{\underline{#2}}}
@@ -132,30 +138,6 @@ with a \textbf{minor in Physics}, from Universidad de los Andes. Interested in c
 
 \resumeSubHeadingListEnd
 
-%------------------------------ WORK EXPERIENCE --------------------------------
-\section{Work Experience}
-\resumeSubHeadingListStart
-
-  \resumeSubheading
-    {Canals AI}{Coral Gables, FL, United States (Remote) $|$ Jan 2026--Present}
-    {Software Engineer, Accounts Payable}
-  \resumeItemListStart
-    \resumeItem{Develop Canals' \textbf{AI-powered Accounts Payable product}, whose \textbf{LLM pipelines} split each vendor invoice into multiple targeted model queries to extract its parts, match them to purchase orders, and submit payables into distributors' ERPs (Eclipse, Infor, P21).}
-    \resumeItem{Built a secure \textbf{passwordless review flow} for \textbf{external users}, such as customers' approvers without a Canals account, to approve, reject, or comment on expense invoices directly from an email link, using signed links, one-time email codes, device trust, and reCAPTCHA, while reusing the same review interface as logged-in users (TypeScript, PostgreSQL, Svelte).}
-    \resumeItem{Extended a customer-configurable rules engine that flags, routes, or blocks AI-processed invoices, adding new exception checks end to end, from backend detection to the settings UI.}
-    \resumeItem{Handled \textbf{150+ inbound customer tickets}, diagnosing and resolving issues reported by distributors.}
-  \resumeItemListEnd
-
-  \resumeSubheading
-    {Precia PPV S.A.}{Bogotá, Colombia (Internship) $|$ Jan 2025--May 2025}
-    {Systems and Computing Engineering Intern}
-  \resumeItemListStart
-    \resumeItem{Optimized Python data-processing code running on AWS Lambda and AWS Glue, improving its performance and efficiency.}
-    \resumeItem{Helped develop interactive Power BI dashboards to analyze and visualize Colombian Stock Exchange data.}
-  \resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
 %---------------------------- RESEARCH EXPERIENCE ------------------------------
 \section{Research Experience}
 \resumeSubHeadingListStart
@@ -199,7 +181,7 @@ with a \textbf{minor in Physics}, from Universidad de los Andes. Interested in c
     \resumeItemListStart
       \resumeItem{Supervisor: \textbf{Prof. Eduardo Rosales, Ph.D.} (\email{ee.rosales24@uniandes.edu.co}).}
       \resumeItem{One of a seven-person team managing the university's programming support center, scheduling about 40 tutors and 70 teaching assistants for \textbf{1,500+ students}.}
-      \resumeItem{Managed the university's \textbf{Coursera} courses ``Programming in Python'' and ``Introduction to Object-Oriented Programming in Java''.}
+      \resumeItem{Managed the university's \textbf{Coursera} courses ``\link{https://www.coursera.org/learn/programacion-python}{Programming in Python}'' and ``\link{https://www.coursera.org/learn/introduccion-programacion-java}{Introduction to Object-Oriented Programming in Java}''.}
       \resumeItem{Co-led the design and development of CupiMonitores (NestJS, Next.js), a platform for managing, grading, and controlling access for teaching assistants.}
       \resumeItem{Created programming problem sets with automated solution checking for Senecode and maintained a Discord bot (TypeScript) for remote tutoring.}
     \resumeItemListEnd
@@ -211,6 +193,30 @@ with a \textbf{minor in Physics}, from Universidad de los Andes. Interested in c
     \resumeItemListEnd
 
   \resumeRoleListEnd
+
+\resumeSubHeadingListEnd
+
+%------------------------------ WORK EXPERIENCE --------------------------------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Canals AI}{Coral Gables, FL, United States (Remote) $|$ Jan 2026--Present}
+    {Software Engineer, Accounts Payable}
+  \resumeItemListStart
+    \resumeItem{Develop Canals' \textbf{AI-powered Accounts Payable product}, whose \textbf{LLM pipelines} split each vendor invoice into multiple targeted model queries to extract its parts, match them to purchase orders, and submit payables into distributors' ERPs (Eclipse, Infor, P21).}
+    \resumeItem{Built a secure \textbf{passwordless review flow} for \textbf{external users}, such as customers' approvers without a Canals account, to approve, reject, or comment on expense invoices directly from an email link, using signed links, one-time email codes, device trust, and reCAPTCHA, while reusing the same review interface as logged-in users (TypeScript, PostgreSQL, Svelte).}
+    \resumeItem{Extended a customer-configurable rules engine that flags, routes, or blocks AI-processed invoices, adding new exception checks end to end, from backend detection to the settings UI.}
+    \resumeItem{Handled \textbf{150+ inbound customer tickets}, diagnosing and resolving issues reported by distributors.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Precia PPV S.A.}{Bogotá, Colombia (Internship) $|$ Jan 2025--May 2025}
+    {Systems and Computing Engineering Intern}
+  \resumeItemListStart
+    \resumeItem{Optimized Python data-processing code running on AWS Lambda and AWS Glue, improving its performance and efficiency.}
+    \resumeItem{Helped develop interactive Power BI dashboards to analyze and visualize Colombian Stock Exchange data.}
+  \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
@@ -256,13 +262,12 @@ with a \textbf{minor in Physics}, from Universidad de los Andes. Interested in c
 \section{Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-    \textbf{Languages}: Spanish (native), English (\textbf{C1}, Cambridge FCE), French (B1, DELF), Italian (B1, CILS) \\[2pt]
-    \textbf{Programming Languages}: Python, TypeScript, JavaScript, Java, MicroPython, SQL \\[2pt]
-    \textbf{AI and Machine Learning}: LLM pipelines, PyTorch, Ultralytics YOLO, ONNX, TensorFlow, computer vision, NLP \\[2pt]
-    \textbf{Backend and Infrastructure}: FastAPI, NestJS, PostgreSQL, WebSocket, Docker, Nginx, AWS (Lambda, Glue), Git \\[2pt]
-    \textbf{Frontend}: React, Next.js, Vue 3, Svelte, Tailwind CSS \\[2pt]
-    \textbf{Robotics and Embedded}: XRP, Intel AIxBoard, Web Serial API, UART serial protocols \\[2pt]
-    \textbf{Data}: pandas, Matplotlib, Power BI
+    \textbf{Languages}: Spanish (native), English (\textbf{C1}, Cambridge FCE), French (B1, DELF), Italian (B1, CILS) \\[1pt]
+    \textbf{Programming Languages}: Python, TypeScript, JavaScript, Java, MicroPython, SQL \\[1pt]
+    \textbf{AI and Machine Learning}: LLM pipelines, PyTorch, Ultralytics YOLO, ONNX, TensorFlow, computer vision, NLP \\[1pt]
+    \textbf{Backend and Infrastructure}: FastAPI, NestJS, PostgreSQL, WebSocket, Docker, Nginx, AWS (Lambda, Glue), Git \\[1pt]
+    \textbf{Frontend}: React, Next.js, Vue 3, Svelte, Tailwind CSS \\[1pt]
+    \textbf{Robotics and Embedded}: XRP, Intel AIxBoard, Web Serial API, UART serial protocols
   }}
 \end{itemize}
 
@@ -271,7 +276,19 @@ with a \textbf{minor in Physics}, from Universidad de los Andes. Interested in c
 \section{Publications}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-    Martínez Novoa, S., Soto Parada, E. G., Klopstock Triana, N., \textbf{Fuquen Flórez, D. A.}, Hernández Hoyos, M., \& Reyes, J. P. (2026). ``Progressive Course Difficulty Encoding for Student Success Prediction in a Latin American University.'' Submitted to \textit{Journal of Learning Analytics (JLA)}.
+    Martínez Novoa, S., et al., including \textbf{Fuquen Flórez, D. A.} (2026). ``Progressive Course Difficulty Encoding for Student Success Prediction in a Latin American University.'' Submitted to \textit{Journal of Learning Analytics (JLA)}.
+  }}
+\end{itemize}
+
+%--------------------------- ADDITIONAL REFERENCES -----------------------------
+\vspace{3pt}
+\section{Additional References (Universidad de los Andes)}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \link{mailto:ca.florez@uniandes.edu.co}{Carlos Andrés Flórez} $|$
+    \link{mailto:ja.duitama@uniandes.edu.co}{Jorge Duitama} $|$
+    \link{mailto:mar-san1@uniandes.edu.co}{Mario Sánchez} $|$
+    \link{mailto:pa.velandiar@uniandes.edu.co}{Paula Velandia}
   }}
 \end{itemize}
 
