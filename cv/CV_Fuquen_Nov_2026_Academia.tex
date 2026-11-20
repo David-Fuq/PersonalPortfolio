@@ -34,6 +34,7 @@
 
 % Section headings: small caps title with a full-width rule
 \titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+\titlespacing*{\section}{0pt}{4pt}{8pt}
 
 % Make the PDF machine-readable (ATS friendly)
 \pdfgentounicode=1
@@ -81,7 +82,7 @@
 \newcommand{\resumeRoleListStart}{\begin{itemize}[leftmargin=0.15in, label={}, topsep=2pt, itemsep=2pt, parsep=0pt]}
 \newcommand{\resumeRoleListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=0pt, label=\textbullet]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{3pt}}
 
 %===============================================================================
 \begin{document}
@@ -107,6 +108,7 @@ hackathon at \textbf{The University of Hong Kong}'s Shanghai campus with the
 with a \textbf{minor in Physics}, from Universidad de los Andes. Interested in continuing to use my technical abilities and problem-solving skills to tackle
   challenging problems in the research field.
 }
+\vspace{6pt}
 
 %--------------------------------- EDUCATION -----------------------------------
 \section{Education}
@@ -182,9 +184,7 @@ with a \textbf{minor in Physics}, from Universidad de los Andes. Interested in c
 
   \resumeRoleListEnd
 
-  \resumeSubheading
-    {Cornell University}{Ithaca, NY, United States $|$ Jun 2025--Aug 2025}
-    {Summer Undergraduate Research Fellow (SURF)}
+  \resumeRole{Summer Undergraduate Research Fellow (SURF)}
   \resumeItemListStart
     \resumeItem{Supervisor: \textbf{Prof. Clifford Whitcomb, Ph.D.} (\email{example@email.com}), Director of Graduate Studies and Executive Director of the Systems Engineering Program}
     \resumeItem{Developed XRP robot features and an educational guide for Cornell SYSEN 5920 and 5100, \textbf{the first program recognized by INCOSE as a knowledge-exam equivalent}}
@@ -255,17 +255,18 @@ with a \textbf{minor in Physics}, from Universidad de los Andes. Interested in c
 \section{Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
-    \textbf{Languages}: Spanish (native), English (\textbf{C1}, Cambridge FCE), French (B1, DELF), Italian (B1, CILS) \\
-    \textbf{Programming Languages}: Python, TypeScript, JavaScript, Java, MicroPython, SQL \\
-    \textbf{AI and Machine Learning}: LLM pipelines, PyTorch, Ultralytics YOLO, ONNX, TensorFlow, computer vision, NLP \\
-    \textbf{Backend and Infrastructure}: FastAPI, NestJS, PostgreSQL, WebSocket, Docker, Nginx, AWS (Lambda, Glue), Git \\
-    \textbf{Frontend}: React, Next.js, Vue 3, Svelte, Tailwind CSS \\
-    \textbf{Robotics and Embedded}: XRP, Intel AIxBoard, Web Serial API, UART serial protocols \\
+    \textbf{Languages}: Spanish (native), English (\textbf{C1}, Cambridge FCE), French (B1, DELF), Italian (B1, CILS) \\[2pt]
+    \textbf{Programming Languages}: Python, TypeScript, JavaScript, Java, MicroPython, SQL \\[2pt]
+    \textbf{AI and Machine Learning}: LLM pipelines, PyTorch, Ultralytics YOLO, ONNX, TensorFlow, computer vision, NLP \\[2pt]
+    \textbf{Backend and Infrastructure}: FastAPI, NestJS, PostgreSQL, WebSocket, Docker, Nginx, AWS (Lambda, Glue), Git \\[2pt]
+    \textbf{Frontend}: React, Next.js, Vue 3, Svelte, Tailwind CSS \\[2pt]
+    \textbf{Robotics and Embedded}: XRP, Intel AIxBoard, Web Serial API, UART serial protocols \\[2pt]
     \textbf{Data}: pandas, Matplotlib, Power BI
   }}
 \end{itemize}
 
 %------------------------------- PUBLICATIONS ----------------------------------
+\vspace{3pt}
 \section{Publications}
 \begin{itemize}[leftmargin=0.15in, label={}]
   \small{\item{
