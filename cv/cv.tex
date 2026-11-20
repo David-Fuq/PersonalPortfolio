@@ -1,0 +1,283 @@
+%-------------------------------------------------------------------------------
+% CV — David Alejandro Fuquen Flórez
+% Compile with: pdflatex cv.tex   (or upload to Overleaf)
+%-------------------------------------------------------------------------------
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\pagestyle{empty}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section headings: small caps title with a full-width rule
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule\vspace{-5pt}]
+
+% Make the PDF machine-readable (ATS friendly)
+\pdfgentounicode=1
+
+%------------------------------ Custom commands --------------------------------
+\newcommand{\resumeItem}[1]{\item\small{#1\vspace{-2pt}}}
+
+% Organization line: name (left), location | dates (right)
+\newcommand{\resumeOrg}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+% Role line: title (left, italic), dates (right)
+\newcommand{\resumeRole}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & {\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+% Single-role entry: org + location/dates on line 1, role on line 2
+\newcommand{\resumeSubheading}[3]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+% Award: name + issuer/year, with an italic description underneath
+\newcommand{\resumeAward}[3]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+  \end{tabular*}\\[-2pt]
+  {\footnotesize\textit{#3}}\vspace{-3pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeRoleListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeRoleListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%===============================================================================
+\begin{document}
+
+%---------------------------------- HEADING ------------------------------------
+\begin{center}
+  {\Huge \textbf{David Alejandro Fuquen Flórez}} \\ \vspace{3pt}
+  \small
+  \href{mailto:fuquendavid@gmail.com}{\underline{fuquendavid@gmail.com}} $|$
+  \href{https://linkedin.com/in/david-fuquen}{\underline{linkedin.com/in/david-fuquen}} $|$
+  \href{https://github.com/David-Fuq}{\underline{github.com/David-Fuq}}
+\end{center}
+
+%---------------------------------- PROFILE ------------------------------------
+\section{Profile}
+\small{
+Software engineer on the Accounts Payable product at Canals AI, a U.S.-based AI
+company automating the industrial supply chain. Technical Advisor for Orbit
+Odyssey, an AI and robotics education program run with Cornell University, The
+University of Hong Kong, and the CETIC Foundation, and current adjunct lecturer
+of programming at Universidad de los Andes. Cum laude graduate in Systems and
+Computing Engineering with a minor in Physics.
+}
+
+%--------------------------------- EDUCATION -----------------------------------
+\section{Education}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Universidad de los Andes}{Bogotá, Colombia $|$ Aug 2020--Apr 2026}
+    {B.E. in Systems and Computing Engineering, Minor in Physics}
+  \resumeItemListStart
+    \resumeItem{Graduated cum laude; GPA: 4.58/5.00}
+    \resumeItem{Undergraduate thesis on recreating Meta's V-JEPA 2-AC self-supervised video architecture for robotic action prediction, advised by Prof. Rubén Manrique, Ph.D.}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Politecnico di Milano}{Milan, Italy $|$ Feb 2024--Jul 2024}
+    {International Studies Program (Exchange)}
+  \resumeItemListStart
+    \resumeItem{Coursework: Machine Learning, Internet of Things, Robotics}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%------------------------------ WORK EXPERIENCE --------------------------------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Canals AI}{Coral Gables, FL, United States (Remote) $|$ Jan 2026--Present}
+    {Software Engineer, Accounts Payable}
+  \resumeItemListStart
+    \resumeItem{Shipped 325+ merged pull requests to Canals' Accounts Payable product, which reads vendor invoices, matches them to purchase orders, and submits payables into distributors' ERPs (Eclipse, Infor, P21), using TypeScript, PostgreSQL, and Svelte}
+    \resumeItem{Built a secure passwordless review flow so approvers can approve, reject, or comment on invoices without logging in, using signed links, emailed one-time codes, device trust, and reCAPTCHA. Delivered it as a stack of about 15 independently deployable PRs}
+    \resumeItem{Developed the Accounts Payable side of Canals' custom API for the Eclipse ERP: the API client, handlers for expense, stock, and direct payables, and a PO variance queue. Each piece shipped behind a feature flag before the legacy path was removed}
+    \resumeItem{Extended a customer-configurable rules engine that flags, routes, or blocks invoices, adding new exception checks (freight already billed in the PO, prohibited add-on charges, bill-to mismatches) end to end, from backend detection to the settings UI}
+    \resumeItem{Built approval groups and workflows with role-based permissions, a unified audit timeline for each payable, and a scheduled daily email listing each purchasing location's unsubmitted drop-ship invoices}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Precia PPV S.A.}{Bogotá, Colombia (Internship) $|$ Jan 2025--May 2025}
+    {Systems and Computing Engineering Intern}
+  \resumeItemListStart
+    \resumeItem{Optimized Python data-processing code running on AWS Lambda and AWS Glue, improving its performance and efficiency}
+    \resumeItem{Helped develop interactive Power BI dashboards to analyze and visualize Colombian Stock Exchange data}
+    \resumeItem{Contributed to the technology team behind Precia's pricing solutions for financial asset valuation in Colombia}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%---------------------------- RESEARCH EXPERIENCE ------------------------------
+\section{Research Experience}
+\resumeSubHeadingListStart
+
+  \resumeOrg{Cornell University, Cornell Cup Robotics}{Ithaca, NY, United States (Remote) $|$ Aug 2025--Present}
+  \resumeRoleListStart
+
+    \resumeRole{Technical Advisor and Hackathon Lead, Orbit Odyssey (with HKU and the CETIC Foundation)}{Mar 2026--Present}
+    \resumeItemListStart
+      \resumeItem{Designed and co-built the computer vision challenge for the MeckUp Hackathon at The University of Hong Kong's Zhangjiang Base in Shanghai (Aug 2026), with 100+ students aged 10--15 from across China}
+      \resumeItem{Co-built a web platform (FastAPI, Vue 3, Docker, Nginx) where teams trained and ran their own YOLO object detectors on a dedicated GPU server, giving every team identical resources, streaming live training metrics over WebSocket, and verifying submitted models with SHA-256 hashes}
+      \resumeItem{Co-built the robot pipeline: YOLO models exported to ONNX on an Intel AIxBoard stream detections over UART to an XRP robot (MicroPython) that autonomously contacts or avoids objects}
+      \resumeItem{Designed the game rules, playing fields, scoring system, and student and moderator guides. Served as organizer, judge, and instructor at the event, working with HKU's Assistant Dean and the CETIC Foundation's Director}
+      \resumeItem{Extended the platform with an NLP challenge (PyTorch intent classification and slot extraction) that teaches students to turn natural-language commands into robot actions}
+    \resumeItemListEnd
+
+    \resumeRole{Project Lead, ISS microMimic (Computer Science Team)}{Aug 2025--Present}
+    \resumeItemListStart
+      \resumeItem{Lead the ISS microMimic project, an XRP robot variant that mirrors real-time telemetry from the International Space Station, exhibited at the MIT Museum}
+      \resumeItem{Fully responsible for the project's graphical user interface}
+    \resumeItemListEnd
+
+  \resumeRoleListEnd
+
+  \resumeSubheading
+    {Cornell University}{Ithaca, NY, United States $|$ Jun 2025--Aug 2025}
+    {Summer Undergraduate Research Fellow (SURF)}
+  \resumeItemListStart
+    \resumeItem{Developed XRP robot features and an educational guide for Cornell SYSEN 5920 and 5100, the first program recognized by INCOSE as a knowledge-exam equivalent}
+    \resumeItem{Contributed to the XRP robotics education platform, used in 180+ countries with partners including FIRST, Raspberry Pi, SparkFun, NASA, and Lockheed Martin}
+    \resumeItem{Designed and built the GUI (React, Web Serial API, Python) and USB serial communication protocol for AgXRP, an open-source autonomous platform for precision agriculture, with robot-side control in MicroPython}
+    \resumeItem{Work presented to all 50 U.S. Governors and the U.S. Secretary of Education at the National Governors Association meeting (Feb 2026)}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {Universidad de los Andes}{Bogotá, Colombia $|$ Aug 2024--Jan 2025}
+    {Undergraduate Research Assistant, Enterprise Architecture}
+  \resumeItemListStart
+    \resumeItem{Supervisor: Prof. Jorge Villalobos, Ph.D.}
+    \resumeItem{Designed exams for the new Enterprise Architecture course in the Master's in IT Management (MAIT) and conducted theoretical research on enterprise architecture}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%---------------------------- TEACHING EXPERIENCE ------------------------------
+\section{Teaching Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Universidad de los Andes}{Bogotá, Colombia $|$ Jan 2026--Present}
+    {Adjunct Lecturer, Introduction to Programming (Python)}
+  \resumeItemListStart
+    \resumeItem{Principal instructor for a 25-student undergraduate course, a role typically reserved for graduate-level faculty}
+    \resumeItem{Deliver lectures, design exams and programming assignments, and coordinate weekly lab sessions with two teaching assistants}
+  \resumeItemListEnd
+
+  \resumeSubheading
+    {The University of Hong Kong, Zhangjiang Base}{Shanghai, China $|$ Aug 2026}
+    {Instructor and Judge, MeckUp Hackathon (Orbit Odyssey)}
+  \resumeItemListStart
+    \resumeItem{Taught computer vision fundamentals to 100+ students aged 10--15, guiding teams as they trained and deployed their own models on robots}
+  \resumeItemListEnd
+
+  \resumeOrg{Universidad de los Andes}{Bogotá, Colombia $|$ Jan 2021--Feb 2026}
+  \resumeRoleListStart
+
+    \resumeRole{Undergraduate Research Assistant, CupiTaller}{Aug 2024--Feb 2026}
+    \resumeItemListStart
+      \resumeItem{Supervisor: Prof. Eduardo Rosales, Ph.D.}
+      \resumeItem{One of a seven-person team managing the university's programming support center, scheduling about 40 tutors and 70 teaching assistants for 1,500+ students}
+      \resumeItem{Managed the university's Coursera courses ``Programming in Python'' and ``Introduction to Object-Oriented Programming in Java''}
+      \resumeItem{Co-led the design and development of CupiMonitores (NestJS, Next.js), a platform for managing, grading, and controlling access for teaching assistants}
+      \resumeItem{Created programming problem sets with automated solution checking for Senecode and maintained a Discord bot (TypeScript) for remote tutoring}
+    \resumeItemListEnd
+
+    \resumeRole{Tutor, CupiTaller}{Feb 2023--Jun 2023}
+    \resumeItemListStart
+      \resumeItem{Ran daily Python tutoring sessions, helping 80+ students build programming fundamentals}
+    \resumeItemListEnd
+
+    \resumeRole{Teaching Assistant, Introduction to Programming; IT for Organizations}{Jan 2021--Dec 2023}
+    \resumeItemListStart
+      \resumeItem{Supported labs of about 40 students, graded programming projects and assessments, and gave monthly lectures}
+    \resumeItemListEnd
+
+  \resumeRoleListEnd
+
+\resumeSubHeadingListEnd
+
+%----------------------------- AWARDS AND HONORS -------------------------------
+\section{Awards and Honors}
+\resumeSubHeadingListStart
+
+  \resumeAward{Cum Laude}{Universidad de los Andes, 2026}
+    {Undergraduate honor awarded for academic excellence}
+
+  \resumeAward{Expoandes Winner, Systems and Computing Engineering}{Universidad de los Andes, 2022}
+    {Comunicarnos, a sign-language recognizer built with Python and TensorFlow}
+
+  \resumeAward{La Muestra Presenter, Systems and Computing Engineering}{Universidad de los Andes, 2023}
+    {BoGoPlan, a machine-learning recommender that matches users with cultural events}
+
+  \resumeAward{National Physics Olympiad (11th place) and National Science Olympiad (13th place)}{Universidad Antonio Nariño; 2019, 2018}
+    {Top national placements in Colombia's secondary-school olympiads}
+
+\resumeSubHeadingListEnd
+
+%---------------------------------- SKILLS -------------------------------------
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Languages}: Spanish (native), English (C1, Cambridge FCE), French (B1, DELF), Italian (B1, CILS) \\
+    \textbf{Programming Languages}: Python, TypeScript, JavaScript, Java, MicroPython, SQL \\
+    \textbf{AI and Machine Learning}: PyTorch, Ultralytics YOLO, ONNX, TensorFlow, computer vision, NLP \\
+    \textbf{Backend and Infrastructure}: FastAPI, NestJS, PostgreSQL, WebSocket, Docker, Nginx, AWS (Lambda, Glue), Git \\
+    \textbf{Frontend}: React, Next.js, Vue 3, Svelte, Tailwind CSS \\
+    \textbf{Robotics and Embedded}: XRP, Intel AIxBoard, Web Serial API, UART serial protocols \\
+    \textbf{Data}: pandas, Matplotlib, Power BI
+  }}
+\end{itemize}
+
+%------------------------------- PUBLICATIONS ----------------------------------
+\section{Publications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{\item{
+    \textbf{Fuquen Flórez, D. A.} (2026). ``Recreating the V-JEPA 2-AC Architecture for Self-Supervised Video Models.'' Undergraduate thesis, advised by Prof. Rubén Manrique, Ph.D. Universidad de los Andes. Available at: \href{https://hdl.handle.net/1992/77925}{\underline{Séneca Repository}}
+  }}
+\end{itemize}
+
+\end{document}
