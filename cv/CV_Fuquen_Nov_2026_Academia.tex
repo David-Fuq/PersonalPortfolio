@@ -4,11 +4,12 @@
 %
 % TODO: replace every example@email.com placeholder with the real address.
 %-------------------------------------------------------------------------------
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,10pt]{article}
 
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{lmodern}
+\linespread{1.2} % extra space between lines
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -56,7 +57,7 @@
   \item
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} & #2 \\
-  \end{tabular*}\vspace{-7pt}
+  \end{tabular*}\vspace{-4pt}
 }
 
 % Role line: title (left, italic), dates (right)
@@ -73,7 +74,7 @@
   \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
     \textbf{#1} & #2 \\
     \textit{\small#3} & \\
-  \end{tabular*}\vspace{-7pt}
+  \end{tabular*}\vspace{-4pt}
 }
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
@@ -118,16 +119,16 @@ with a \textbf{minor in Physics}, from Universidad de los Andes. Interested in c
     {Universidad de los Andes}{Bogotá, Colombia $|$ Aug 2020--Apr 2026}
     {B.Sc. in Systems and Computing Engineering, Minor in Physics}
   \resumeItemListStart
-    \resumeItem{Graduated \textbf{Cum Laude}; \textbf{GPA: 4.58/5.00}}
-    \resumeItem{Thesis: ``\href{https://hdl.handle.net/1992/77925}{\underline{Recreating the V-JEPA 2-AC Architecture for Self-Supervised Video Models}}'', advised by \textbf{Prof. Rubén Manrique, Ph.D.} (\email{example@email.com})}
+    \resumeItem{Graduated \textbf{Cum Laude}; \textbf{GPA: 4.58/5.00}.}
+    \resumeItem{Thesis: ``\href{https://hdl.handle.net/1992/77925}{\underline{Recreating the V-JEPA 2-AC Architecture for Self-Supervised Video Models}}'', advised by \textbf{Prof. Rubén Manrique, Ph.D.} (\email{example@email.com}).}
   \resumeItemListEnd
 
   \resumeSubheading
     {Politecnico di Milano}{Milan, Italy $|$ Feb 2024--Jul 2024}
     {International Studies Program (Exchange)}
   \resumeItemListStart
-    \resumeItem{\textbf{GPA: 28/30}}
-    \resumeItem{Coursework: \textbf{Machine Learning}, \textbf{Internet of Things}, \textbf{Robotics}}
+    \resumeItem{\textbf{GPA: 28/30}.}
+    \resumeItem{Coursework: \textbf{Machine Learning}, \textbf{Internet of Things}, \textbf{Robotics}.}
   \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -140,18 +141,18 @@ with a \textbf{minor in Physics}, from Universidad de los Andes. Interested in c
     {Canals AI}{Coral Gables, FL, United States (Remote) $|$ Jan 2026--Present}
     {Software Engineer, Accounts Payable}
   \resumeItemListStart
-    \resumeItem{Develop Canals' \textbf{AI-powered Accounts Payable product}, whose \textbf{LLM pipelines} split each vendor invoice into multiple targeted model queries to extract its parts, match them to purchase orders, and submit payables into distributors' ERPs (Eclipse, Infor, P21)}
-    \resumeItem{Built a secure \textbf{passwordless review flow} for \textbf{external users}, such as customers' approvers without a Canals account, to approve, reject, or comment on expense invoices directly from an email link, using signed links, one-time email codes, device trust, and reCAPTCHA, while reusing the same review interface as logged-in users (TypeScript, PostgreSQL, Svelte)}
-    \resumeItem{Extended a customer-configurable rules engine that flags, routes, or blocks AI-processed invoices, adding new exception checks end to end, from backend detection to the settings UI}
-    \resumeItem{Handled \textbf{150+ inbound customer tickets}, diagnosing and resolving issues reported by distributors}
+    \resumeItem{Develop Canals' \textbf{AI-powered Accounts Payable product}, whose \textbf{LLM pipelines} split each vendor invoice into multiple targeted model queries to extract its parts, match them to purchase orders, and submit payables into distributors' ERPs (Eclipse, Infor, P21).}
+    \resumeItem{Built a secure \textbf{passwordless review flow} for \textbf{external users}, such as customers' approvers without a Canals account, to approve, reject, or comment on expense invoices directly from an email link, using signed links, one-time email codes, device trust, and reCAPTCHA, while reusing the same review interface as logged-in users (TypeScript, PostgreSQL, Svelte).}
+    \resumeItem{Extended a customer-configurable rules engine that flags, routes, or blocks AI-processed invoices, adding new exception checks end to end, from backend detection to the settings UI.}
+    \resumeItem{Handled \textbf{150+ inbound customer tickets}, diagnosing and resolving issues reported by distributors.}
   \resumeItemListEnd
 
   \resumeSubheading
     {Precia PPV S.A.}{Bogotá, Colombia (Internship) $|$ Jan 2025--May 2025}
     {Systems and Computing Engineering Intern}
   \resumeItemListStart
-    \resumeItem{Optimized Python data-processing code running on AWS Lambda and AWS Glue, improving its performance and efficiency}
-    \resumeItem{Helped develop interactive Power BI dashboards to analyze and visualize Colombian Stock Exchange data}
+    \resumeItem{Optimized Python data-processing code running on AWS Lambda and AWS Glue, improving its performance and efficiency.}
+    \resumeItem{Helped develop interactive Power BI dashboards to analyze and visualize Colombian Stock Exchange data.}
   \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -160,56 +161,57 @@ with a \textbf{minor in Physics}, from Universidad de los Andes. Interested in c
 \section{Research Experience}
 \resumeSubHeadingListStart
 
-  \resumeOrg{Cornell University, Cornell Cup Robotics}{Ithaca, NY, United States (Remote) $|$ Aug 2025--Present}
+  \resumeOrg{Cornell University, Cornell Cup Robotics}{Ithaca, NY, United States $|$ Jun 2025--Present}
   \resumeItemListStart
-    \resumeItem{Supervisor: \textbf{Prof. David Schneider, Ph.D.} (\email{example@email.com}), Director of the Systems Engineering Program and Professor of Practice}
+    \resumeItem{Supervisor: \textbf{Prof. David Schneider, Ph.D.} (\email{example@email.com}), Director of the Systems Engineering Program and Professor of Practice.}
   \resumeItemListEnd
   \resumeRoleListStart
 
     \resumeRole{Technical Advisor and Hackathon Lead, Orbit Odyssey (with HKU and the CETIC Foundation)}{Mar 2026--Present}
     \resumeItemListStart
-      \resumeItem{Designed and co-built the \textbf{\todolink{computer vision challenge}} for the \textbf{\link{https://meckup.org/}{MeckUp Hackathon}} at \textbf{The University of Hong Kong}'s Zhangjiang Base in \textbf{Shanghai} (Aug 2026), with \textbf{100+ students aged 10--15 from across China}}
-      \resumeItem{Worked with \textbf{Match Wai Lun Ko} (\email{example@email.com}), Assistant Dean at The University of Hong Kong, and \textbf{Lena Foo} (\email{example@email.com}), Managing Principal of the \link{https://ceticfoundation.org/}{CETIC Foundation}, to design and run the challenge}
-      \resumeItem{Co-built a \todolink{web platform} (FastAPI, Vue 3, Docker, Nginx) where teams trained and ran their own \textbf{YOLO object detectors} on a dedicated GPU server, giving every team identical resources, streaming live training metrics over WebSocket, and verifying submitted models with SHA-256 hashes}
-      \resumeItem{Co-built the robot pipeline: YOLO models exported to ONNX on an Intel AIxBoard stream detections over UART to an XRP robot (MicroPython) that autonomously contacts or avoids objects}
-      \resumeItem{Extended the platform with an \textbf{NLP challenge} (PyTorch intent classification and slot extraction) that teaches students to turn natural-language commands into robot actions, to be featured at the next MeckUp competition in Shanghai (Feb 2027)}
+      \resumeItem{Designed and co-built the \textbf{\todolink{computer vision challenge}} for the \textbf{\link{https://meckup.org/}{MeckUp Hackathon}} at \textbf{The University of Hong Kong}'s Zhangjiang Base in \textbf{Shanghai} (Aug 2026), with \textbf{100+ students aged 10--15 from across China}.}
+      \resumeItem{Worked with \textbf{Match Wai Lun Ko} (\email{example@email.com}), Assistant Dean at The University of Hong Kong, and \textbf{Lena Foo} (\email{example@email.com}), Managing Principal of the \link{https://ceticfoundation.org/}{CETIC Foundation}, to design and run the challenge.}
+      \resumeItem{Co-built a \todolink{web platform} (FastAPI, Vue 3, Docker, Nginx) where teams trained and ran their own \textbf{YOLO object detectors} on a dedicated GPU server, giving every team identical resources, streaming live training metrics over WebSocket, and verifying submitted models with SHA-256 hashes.}
+      \resumeItem{Co-built the robot pipeline: YOLO models exported to ONNX on an Intel AIxBoard stream detections over UART to an XRP robot (MicroPython) that autonomously contacts or avoids objects.}
+      \resumeItem{Extended the platform with an \textbf{NLP challenge} (PyTorch intent classification and slot extraction) that teaches students to turn natural-language commands into robot actions, to be featured at the next MeckUp competition in Shanghai (Feb 2027).}
     \resumeItemListEnd
 
     \resumeRole{Project Co-Lead, ISS microMimic (Computer Science Team)}{Aug 2025--Present}
     \resumeItemListStart
-      \resumeItem{\textbf{Co-lead} the \todolink{ISS microMimic} project, an XRP robot variant that mirrors \textbf{real-time telemetry from the International Space Station}, exhibited at the \textbf{MIT Museum}}
-      \resumeItem{Presented to \textbf{U.S. Governors and the U.S. Secretary of Education} at the \textbf{National Governors Association} meeting in Washington, D.C. (Feb 2026)}
-      \resumeItem{Fully responsible for the project's \todolink{graphical user interface}}
+      \resumeItem{\textbf{Co-lead} the \todolink{ISS microMimic} project, an XRP robot variant that mirrors \textbf{real-time telemetry from the International Space Station}, exhibited at the \textbf{MIT Museum}.}
+      \resumeItem{Presented to \textbf{U.S. Governors and the U.S. Secretary of Education} at the \textbf{National Governors Association} meeting in Washington, D.C. (Feb 2026).}
+      \resumeItem{Fully responsible for the project's \todolink{graphical user interface}.}
+    \resumeItemListEnd
+
+    \resumeRole{Summer Undergraduate Research Fellow (SURF)}{Jun 2025--Aug 2025}
+    \resumeItemListStart
+      \resumeItem{Supervisor: \textbf{Prof. Clifford Whitcomb, Ph.D.} (\email{example@email.com}), Director of Graduate Studies and Executive Director of the Systems Engineering Program.}
+      \resumeItem{Developed XRP robot features and an educational guide for Cornell SYSEN 5920 and 5100, \textbf{the first program recognized by INCOSE as a knowledge-exam equivalent}.}
+      \resumeItem{Contributed to the \todolink{XRP robotics education platform}, used in \textbf{180+ countries} with partners including FIRST, Raspberry Pi, SparkFun, NASA, and Lockheed Martin.}
+      \resumeItem{Designed and built the GUI (React, Web Serial API, Python) and USB serial communication protocol for \textbf{\todolink{AgXRP}}, an open-source autonomous platform for precision agriculture, with robot-side control in MicroPython, supervised by \textbf{Jonathan Jaramillo, Ph.D.} (\email{example@email.com}), Lecturer.}
     \resumeItemListEnd
 
   \resumeRoleListEnd
 
-  \resumeRole{Summer Undergraduate Research Fellow (SURF)}
-  \resumeItemListStart
-    \resumeItem{Supervisor: \textbf{Prof. Clifford Whitcomb, Ph.D.} (\email{example@email.com}), Director of Graduate Studies and Executive Director of the Systems Engineering Program}
-    \resumeItem{Developed XRP robot features and an educational guide for Cornell SYSEN 5920 and 5100, \textbf{the first program recognized by INCOSE as a knowledge-exam equivalent}}
-    \resumeItem{Contributed to the \todolink{XRP robotics education platform}, used in \textbf{180+ countries} with partners including FIRST, Raspberry Pi, SparkFun, NASA, and Lockheed Martin}
-    \resumeItem{Designed and built the GUI (React, Web Serial API, Python) and USB serial communication protocol for \textbf{\todolink{AgXRP}}, an open-source autonomous platform for precision agriculture, with robot-side control in MicroPython, supervised by \textbf{Jonathan Jaramillo, Ph.D.} (\email{example@email.com}), Lecturer}
-  \resumeItemListEnd
+  \resumeOrg{Universidad de los Andes}{Bogotá, Colombia $|$ Aug 2024--Dec 2025}
+  \resumeRoleListStart
 
-  \resumeSubheading
-    {Universidad de los Andes}{Bogotá, Colombia $|$ Aug 2024--Feb 2026}
-    {Undergraduate Research Assistant, CupiTaller}
-  \resumeItemListStart
-    \resumeItem{Supervisor: \textbf{Prof. Eduardo Rosales, Ph.D.} (\email{example@email.com})}
-    \resumeItem{One of a seven-person team managing the university's programming support center, scheduling about 40 tutors and 70 teaching assistants for \textbf{1,500+ students}}
-    \resumeItem{Managed the university's \textbf{Coursera} courses ``Programming in Python'' and ``Introduction to Object-Oriented Programming in Java''}
-    \resumeItem{Co-led the design and development of CupiMonitores (NestJS, Next.js), a platform for managing, grading, and controlling access for teaching assistants}
-    \resumeItem{Created programming problem sets with automated solution checking for Senecode and maintained a Discord bot (TypeScript) for remote tutoring}
-  \resumeItemListEnd
+    \resumeRole{Undergraduate Research Assistant, CupiTaller}{Aug 2024--Dec 2025}
+    \resumeItemListStart
+      \resumeItem{Supervisor: \textbf{Prof. Eduardo Rosales, Ph.D.} (\email{example@email.com}).}
+      \resumeItem{One of a seven-person team managing the university's programming support center, scheduling about 40 tutors and 70 teaching assistants for \textbf{1,500+ students}.}
+      \resumeItem{Managed the university's \textbf{Coursera} courses ``Programming in Python'' and ``Introduction to Object-Oriented Programming in Java''.}
+      \resumeItem{Co-led the design and development of CupiMonitores (NestJS, Next.js), a platform for managing, grading, and controlling access for teaching assistants.}
+      \resumeItem{Created programming problem sets with automated solution checking for Senecode and maintained a Discord bot (TypeScript) for remote tutoring.}
+    \resumeItemListEnd
 
-  \resumeSubheading
-    {Universidad de los Andes}{Bogotá, Colombia $|$ Aug 2024--Jan 2025}
-    {Undergraduate Research Assistant, Enterprise Architecture}
-  \resumeItemListStart
-    \resumeItem{Supervisor: \textbf{Prof. Jorge Villalobos, Ph.D.} (\email{example@email.com})}
-    \resumeItem{Designed exams for the new Enterprise Architecture course in the \textbf{Master's in IT Management (MAIT)} and conducted theoretical research on enterprise architecture}
-  \resumeItemListEnd
+    \resumeRole{Undergraduate Research Assistant, Enterprise Architecture}{Aug 2024--Jan 2025}
+    \resumeItemListStart
+      \resumeItem{Supervisor: \textbf{Prof. Jorge Villalobos, Ph.D.} (\email{example@email.com}).}
+      \resumeItem{Designed exams for the new Enterprise Architecture course in the \textbf{Master's in IT Management (MAIT)} and conducted theoretical research on enterprise architecture.}
+    \resumeItemListEnd
+
+  \resumeRoleListEnd
 
 \resumeSubHeadingListEnd
 
@@ -221,17 +223,17 @@ with a \textbf{minor in Physics}, from Universidad de los Andes. Interested in c
     {Universidad de los Andes}{Bogotá, Colombia $|$ Jan 2026--Present}
     {Adjunct Lecturer, Introduction to Programming (Python)}
   \resumeItemListStart
-    \resumeItem{\textbf{Principal instructor} for a 25-student undergraduate course, a role \textbf{typically reserved for graduate-level faculty}}
-    \resumeItem{Deliver lectures, design exams and programming assignments, and coordinate weekly lab sessions with two teaching assistants}
-    \resumeItem{Topics: programming fundamentals and data processing and visualization with \textbf{pandas} and \textbf{Matplotlib}}
+    \resumeItem{\textbf{Principal instructor} for a 25-student undergraduate course, a role \textbf{typically reserved for graduate-level faculty}.}
+    \resumeItem{Deliver lectures, design exams and programming assignments, and coordinate weekly lab sessions with two teaching assistants.}
+    \resumeItem{Topics: programming fundamentals and data processing and visualization with \textbf{pandas} and \textbf{Matplotlib}.}
   \resumeItemListEnd
 
   \resumeSubheading
     {The University of Hong Kong, Zhangjiang Base}{Shanghai, China $|$ Aug 2026}
     {Organizer, Judge, and Instructor, \link{https://meckup.org/}{MeckUp Hackathon} (Orbit Odyssey)}
   \resumeItemListStart
-    \resumeItem{Taught \textbf{computer vision fundamentals} to \textbf{100+ students aged 10--15}, guiding teams as they trained and deployed their own models on robots}
-    \resumeItem{Organized and judged the event alongside \textbf{Match Wai Lun Ko}, Assistant Dean at The University of Hong Kong}
+    \resumeItem{Taught \textbf{computer vision fundamentals} to \textbf{100+ students aged 10--15}, guiding teams as they trained and deployed their own models on robots.}
+    \resumeItem{Organized and judged the event alongside \textbf{Match Wai Lun Ko}, Assistant Dean at The University of Hong Kong.}
   \resumeItemListEnd
 
   \resumeOrg{Universidad de los Andes}{Bogotá, Colombia $|$ Jan 2021--Dec 2023}
@@ -239,12 +241,12 @@ with a \textbf{minor in Physics}, from Universidad de los Andes. Interested in c
 
     \resumeRole{Tutor, CupiTaller}{Feb 2023--Jun 2023}
     \resumeItemListStart
-      \resumeItem{Ran daily Python tutoring sessions, helping \textbf{80+ students} build programming fundamentals}
+      \resumeItem{Ran daily Python tutoring sessions, helping \textbf{80+ students} build programming fundamentals.}
     \resumeItemListEnd
 
     \resumeRole{Teaching Assistant, Introduction to Programming; IT for Organizations}{Jan 2021--Dec 2023}
     \resumeItemListStart
-      \resumeItem{Supported labs of about 40 students, graded programming projects and assessments, and gave monthly lectures}
+      \resumeItem{Supported labs of about 40 students, graded programming projects and assessments, and gave monthly lectures.}
     \resumeItemListEnd
 
   \resumeRoleListEnd
