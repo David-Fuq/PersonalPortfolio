@@ -3,8 +3,9 @@
 import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import { motion, Variants } from 'motion/react';
-import { Briefcase, GraduationCap, Trophy, BookOpen, FileText } from 'lucide-react';
+import { Briefcase, GraduationCap, FlaskConical, BookOpen, FileText, FileDown } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { CV_PATH } from '@/lib/rich-links';
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -26,13 +27,6 @@ export default function Home() {
 
   const sections = [
     {
-      title: t('sections.workExperience.title'),
-      description: t('sections.workExperience.description'),
-      icon: Briefcase,
-      href: '/work-experience',
-      color: 'bg-blue-500/10 text-blue-500 border-blue-500/20',
-    },
-    {
       title: t('sections.education.title'),
       description: t('sections.education.description'),
       icon: GraduationCap,
@@ -40,11 +34,18 @@ export default function Home() {
       color: 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20',
     },
     {
-      title: t('sections.awards.title'),
-      description: t('sections.awards.description'),
-      icon: Trophy,
-      href: '/awards',
+      title: t('sections.research.title'),
+      description: t('sections.research.description'),
+      icon: FlaskConical,
+      href: '/research',
       color: 'bg-amber-500/10 text-amber-500 border-amber-500/20',
+    },
+    {
+      title: t('sections.workExperience.title'),
+      description: t('sections.workExperience.description'),
+      icon: Briefcase,
+      href: '/work-experience',
+      color: 'bg-blue-500/10 text-blue-500 border-blue-500/20',
     },
     {
       title: t('sections.teaching.title'),
@@ -89,9 +90,18 @@ export default function Home() {
               {t('hero.name')}
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-lg leading-relaxed">
+          <p className="text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed">
             {t('hero.bio')}
           </p>
+          {/* Plain <a>: the i18n Link would prefix the locale and break the file path */}
+          <a
+            href={CV_PATH}
+            download
+            className="inline-flex items-center gap-2 rounded-full border border-border px-5 py-2 text-sm font-medium hover:bg-muted transition-colors"
+          >
+            <FileDown className="h-4 w-4" />
+            {t('hero.downloadCv')}
+          </a>
         </div>
       </motion.section>
 

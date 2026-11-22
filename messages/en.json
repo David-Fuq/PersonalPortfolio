@@ -1,222 +1,190 @@
 {
   "metadata": {
     "title": "David Alejandro Fuquen Flórez - Portfolio",
-    "description": "Software Engineer at Canals, Adjunct Lecturer at Universidad de los Andes, and Cornell Cup Robotics team member."
+    "description": "Software Engineer at Canals AI, AI and robotics education researcher with Cornell University, and Adjunct Lecturer at Universidad de los Andes."
   },
   "nav": {
     "home": "Home",
-    "workExperience": "Work Experience",
     "education": "Education",
-    "awards": "Awards",
+    "research": "Research",
+    "workExperience": "Work Experience",
     "teaching": "Teaching",
     "publications": "Publications",
     "portfolio": "Portfolio"
   },
   "header": {
     "linkedin": "LinkedIn",
+    "github": "GitHub",
     "contact": "Contact",
+    "downloadCv": "Download CV",
     "toggleTheme": "Toggle theme",
     "toggleLanguage": "Toggle language"
+  },
+  "notFound": {
+    "description": "This page doesn't exist.",
+    "home": "Back to home"
   },
   "hero": {
     "greeting": "Hi, I'm",
     "name": "David Alejandro Fuquen Flórez",
-    "bio": "Software Engineer at Canals, Adjunct Lecturer at Universidad de los Andes, and member of Cornell Cup Robotics. B.E. in Systems and Computing Engineering with a minor in Physics. Passionate about software development, robotics, and education.",
+    "bio": "Software Engineer at Canals AI, a fast-growing U.S.-based AI startup for the industrial supply chain. Research and teaching experience across four countries: AI and robotics education research with Cornell University, a machine-learning hackathon at The University of Hong Kong's Shanghai campus with the CETIC Foundation, and an exchange at Politecnico di Milano. Adjunct Lecturer and Cum Laude graduate in Systems and Computing Engineering, with a minor in Physics, from Universidad de los Andes.",
+    "downloadCv": "Download CV",
     "profileAlt": "David Alejandro Fuquen Flórez"
   },
   "sections": {
-    "workExperience": {
-      "title": "Work Experience",
-      "description": "Software engineering, research internships, and robotics projects at Canals, Cornell University, and Precia PPV."
-    },
     "education": {
       "title": "Education",
-      "description": "B.E. in Systems and Computing Engineering from Universidad de los Andes, with international studies at Politecnico di Milano."
+      "description": "Cum Laude B.Sc. in Systems and Computing Engineering (minor in Physics) from Universidad de los Andes, with an exchange at Politecnico di Milano."
     },
-    "awards": {
-      "title": "Awards",
-      "description": "Recognitions including Expoandes winner for an AI-powered sign language recognizer and national olympiad placements."
+    "research": {
+      "title": "Research",
+      "description": "AI and robotics education research with Cornell Cup Robotics, The University of Hong Kong, and the CETIC Foundation, plus research assistantships at Uniandes."
+    },
+    "workExperience": {
+      "title": "Work Experience",
+      "description": "Software engineering on LLM-powered accounts payable at Canals AI, and data engineering at Precia PPV."
     },
     "teaching": {
       "title": "Teaching",
-      "description": "From Python tutor to Adjunct Lecturer, with experience managing 40+ tutors and teaching 1500+ students at Uniandes."
+      "description": "From Python tutor to Adjunct Lecturer at Uniandes, and computer vision instructor for 100+ students in Shanghai."
     },
     "publications": {
       "title": "Publications",
-      "description": "Academic and research publications."
-    }
-  },
-  "workExperience": {
-    "pageTitle": "Work Experience",
-    "pageSubtitle": "Professional roles in software engineering, research, and robotics across industry and academia.",
-    "items": {
-      "work1": {
-        "title": "Software Engineer",
-        "subtitle": "Canals",
-        "date": "Jan 2026 - Present",
-        "brief": "Software Engineer for the Accounts Payables team.",
-        "details": "Software Engineer for the Accounts Payables team."
-      },
-      "work2": {
-        "title": "Adjunct Lecturer - Introduction to Programming with Python",
-        "subtitle": "Universidad de los Andes",
-        "date": "Jan 2026 - Present",
-        "brief": "Principal instructor for a 25-student course, a role typically reserved for graduate-level faculty.",
-        "details": "Principal Instructor for Introduction to Programming with Python.\n\nLead instruction for a 25-student course covering foundational programming concepts using Python.\n\nSelected for a principal instructional role typically reserved for graduate-level faculty.\n\nDeliver lectures, design exams and programming assignments, and coordinate weekly lab sessions with two teaching assistants."
-      },
-      "work3": {
-        "title": "Cornell Cup Robotics Team Member",
-        "subtitle": "Cornell University",
-        "date": "Aug 2025 - Present",
-        "brief": "Working on the ISS microMimic project, an XRP variant receiving real-time telemetry from the International Space Station.",
-        "details": "Currently working with Cornell on the ISS microMimic project: an XRP variant that receives real-time telemetry from the International Space Station. Our work was recently shown at the MIT museum."
-      },
-      "work4": {
-        "title": "Summer Research Intern - SURF",
-        "subtitle": "Cornell University",
-        "date": "Jun 2025 - Aug 2025",
-        "brief": "Developed XRP robotic features and educational guides for courses recognized by INCOSE as a knowledge exam equivalent.",
-        "details": "Developed XRP robotic features and an educational guide for Cornell SYSEN5920 & 5100, the first experience in the world recognized by INCOSE as a knowledge exam equivalent.\n\nHelped create components of the XRP robotic education system, now being used in 180+ countries with support from partners such as FIRST, Raspberry Pi, SparkFun, Lockheed Martin, NASA, Boeing, and many others.\n\nDesigned and implemented a GUI for the AgXRP, an open-source autonomous platform for exploring automation, robotics, and precision agriculture. Built both the communication protocol and a fully functional web application enabling USB-based serial control of the system.\n\nOur work was featured at the National Governors Association meeting in February 2026, presented to all 50 U.S. Governors and the U.S. Secretary of Education."
-      },
-      "work5": {
-        "title": "Systems and Computer Engineering Intern",
-        "subtitle": "Precia PPV S.A.",
-        "date": "Jan 2025 - May 2025",
-        "brief": "Optimized AWS services and developed Power BI dashboards for Colombian Stock Exchange data analysis.",
-        "details": "Optimized existing code within AWS services such as Lambda and Glue, improving performance and efficiency.\n\nHelped develop interactive Power BI dashboards to analyze and visualize data from the Colombian Stock Exchange.\n\nPlayed a key role in the technology team, contributing to industry-leading pricing solutions for valuation in Colombia."
-      },
-      "work6": {
-        "title": "Undergraduate Research Assistant - Enterprise Architecture",
-        "subtitle": "Universidad de los Andes",
-        "date": "Aug 2024 - Jan 2025",
-        "brief": "Research assistant under Professor Jorge Villalobos, Ph.D., creating exams and conducting research on Enterprise Architecture.",
-        "details": "Research assistant under Professor Jorge Villalobos, Ph.D.\n\nResponsible for the creation of exams for the new course \"Arquitectura Empresarial\" of the Master's Degree \"MAIT - Maestría en Gerencia de Tecnologías de Información\" of the Universidad de los Andes.\n\nConducted theoretical research regarding Enterprise Architecture."
-      }
+      "description": "A submitted paper on student success prediction and an undergraduate thesis on self-supervised video models."
     }
   },
   "education": {
     "pageTitle": "Education",
-    "pageSubtitle": "Systems and Computing Engineering from Universidad de los Andes, with international studies at Politecnico di Milano.",
+    "pageSubtitle": "Systems and Computing Engineering at Universidad de los Andes, with an international exchange at Politecnico di Milano.",
     "items": {
       "edu1": {
-        "title": "Bachelor of Engineering - Systems and Computing Engineering",
+        "title": "B.Sc. in Systems and Computing Engineering, Minor in Physics",
         "subtitle": "Universidad de los Andes",
         "date": "Aug 2020 - Apr 2026",
-        "brief": "B.E. with a minor in Physics from one of Latin America's top universities.",
-        "details": "Bachelor of Engineering in Systems and Computing Engineering with a minor in Physics."
+        "brief": "Graduated Cum Laude with a GPA of 4.58/5.00.",
+        "details": "B.Sc. in Systems and Computing Engineering with a minor in Physics.\n\nGraduated Cum Laude; GPA: 4.58/5.00.\n\nThesis: \"<thesis>Recreating the V-JEPA 2-AC Architecture for Self-Supervised Video Models</thesis>\", advised by Prof. Rubén Manrique, Ph.D."
       },
       "edu2": {
-        "title": "International Studies Program",
+        "title": "International Studies Program (Exchange)",
         "subtitle": "Politecnico di Milano",
         "date": "Feb 2024 - Jul 2024",
-        "brief": "International exchange with coursework in Machine Learning, IoT, and Robotics.",
-        "details": "International Studies Program at Politecnico di Milano.\n\nRelevant Coursework:\n- Machine Learning\n- Internet of Things\n- Robotics"
-      },
-      "edu3": {
-        "title": "High School Diploma",
-        "subtitle": "Colegio San Jorge de Inglaterra - Saint George's School",
-        "date": "Graduated Jun 2020",
-        "brief": "Salutatorian — student with the second highest overall GPA of the graduating class.",
-        "details": "Salutatorian, student with the second highest overall GPA of the graduating class 2020.\n\nActivities:\n- Prefect (2020-2021)\n- Committee President COP in Bogotá & SGSMUN (2018-2019)\n- Second Cello in the Symphonic Orchestra (2008-2020)\n- Athletics Team Captain (2020)\n- Basketball Team (2010-2020)"
+        "brief": "Exchange semester in Milan, Italy, with a GPA of 28/30.",
+        "details": "International Studies Program at Politecnico di Milano, Milan, Italy.\n\nGPA: 28/30.\n\nCoursework: Machine Learning, Internet of Things, Robotics."
       }
     }
   },
-  "awards": {
-    "pageTitle": "Awards",
-    "pageSubtitle": "Academic competitions and recognitions in engineering, physics, mathematics, and science.",
+  "research": {
+    "pageTitle": "Research",
+    "pageSubtitle": "AI and robotics education research with Cornell University, The University of Hong Kong, and the CETIC Foundation, and research assistantships at Universidad de los Andes.",
     "items": {
-      "award1": {
-        "title": "\"La Muestra\" Participant - Systems and Computing Engineering",
+      "res1": {
+        "title": "Technical Advisor and Hackathon Lead, Orbit Odyssey",
+        "subtitle": "Cornell Cup Robotics, with The University of Hong Kong and the CETIC Foundation",
+        "date": "Mar 2026 - Present",
+        "brief": "Designed and co-built the computer vision challenge for the MeckUp Hackathon in Shanghai, with 100+ students aged 10-15 from across China.",
+        "details": "Supervisor: Prof. David Schneider, Ph.D., Director of the Systems Engineering Program and Professor of Practice, Cornell University.\n\nDesigned and co-built the computer vision challenge for the <meckup>MeckUp Hackathon</meckup> at The University of Hong Kong's Zhangjiang Base in Shanghai (Aug 2026), with 100+ students aged 10-15 from across China.\n\nWorked with Match Wai Lun Ko, Assistant Dean at The University of Hong Kong, and Lena Foo, Managing Principal of the <cetic>CETIC Foundation</cetic>, to design and run the challenge.\n\nCo-built a web platform (FastAPI, Vue 3, Docker, Nginx) where teams trained and ran their own YOLO object detectors on a dedicated GPU server, giving every team identical resources, streaming live training metrics over WebSocket, and verifying submitted models with SHA-256 hashes.\n\nCo-built the robot pipeline: YOLO models exported to ONNX on an Intel AIxBoard stream detections over UART to an XRP robot (MicroPython) that autonomously contacts or avoids objects.\n\nExtended the platform with an NLP challenge (PyTorch intent classification and slot extraction) that teaches students to turn natural-language commands into robot actions, to be featured at the next MeckUp competition in Shanghai (Feb 2027)."
+      },
+      "res2": {
+        "title": "Project Co-Lead, ISS microMimic",
+        "subtitle": "Cornell Cup Robotics, Computer Science Team",
+        "date": "Aug 2025 - Present",
+        "brief": "Co-lead an XRP robot that mirrors real-time telemetry from the International Space Station, exhibited at the MIT Museum.",
+        "details": "Co-lead the <iss>ISS microMimic</iss> project, an XRP robot variant that mirrors real-time telemetry from the International Space Station, exhibited at the MIT Museum.\n\nPresented to U.S. Governors and the U.S. Secretary of Education at the National Governors Association meeting in Washington, D.C. (Feb 2026).\n\nFully responsible for the project's graphical user interface."
+      },
+      "res3": {
+        "title": "Summer Undergraduate Research Fellow (SURF)",
+        "subtitle": "Cornell University",
+        "date": "Jun 2025 - Aug 2025",
+        "brief": "Built the AgXRP control GUI and serial protocol, and XRP features for a course recognized by INCOSE.",
+        "details": "Supervisor: Prof. Clifford Whitcomb, Ph.D., Director of Graduate Studies and Executive Director of the Systems Engineering Program, Cornell University.\n\nDeveloped XRP robot features and an educational guide for Cornell SYSEN 5920 and 5100, the first program recognized by INCOSE as a knowledge-exam equivalent.\n\nContributed to the <xrp>XRP robotics education platform</xrp> by developing new features and improving the user experience, used in 180+ countries with partners including FIRST, Raspberry Pi, SparkFun, NASA, and Lockheed Martin.\n\nDesigned and built the GUI (React, Web Serial API, Python) and USB serial communication protocol for <agxrp>AgXRP</agxrp>, an open-source autonomous platform for precision agriculture, with robot-side control in MicroPython, supervised by Jonathan Jaramillo, Ph.D., Lecturer."
+      },
+      "res4": {
+        "title": "Undergraduate Research Assistant, CupiTaller",
         "subtitle": "Universidad de los Andes",
-        "date": "Nov 2023",
-        "brief": "Presented \"BoGoPlan,\" a cultural events matchmaker app built using Machine Learning.",
-        "details": "\"BoGoPlan\" — Cultural Events matchmaker software built using Machine Learning.\n\nhttps://youtu.be/xXw-wnFHIf4"
+        "date": "Aug 2024 - Dec 2025",
+        "brief": "Helped manage the university's programming support center, serving 1,500+ students.",
+        "details": "Supervisor: Prof. Eduardo Rosales, Ph.D.\n\nOne of a seven-person team managing the university's programming support center, scheduling about 40 tutors and 70 teaching assistants for 1,500+ students.\n\nManaged the university's Coursera courses \"<python>Programming in Python</python>\" and \"<java>Introduction to Object-Oriented Programming in Java</java>\".\n\nCo-led the design and development of CupiMonitores (NestJS, Next.js), a platform for managing, grading, and controlling access for teaching assistants.\n\nCreated programming problem sets with automated solution checking for Senecode and maintained a Discord bot (TypeScript) for remote tutoring."
       },
-      "award2": {
-        "title": "\"Expoandes\" Winner - Systems and Computing Engineering",
+      "res5": {
+        "title": "Undergraduate Research Assistant, Enterprise Architecture",
         "subtitle": "Universidad de los Andes",
-        "date": "May 2022",
-        "brief": "Won for \"Comunicarnos,\" an AI-powered sign language recognizer built with Python and TensorFlow.",
-        "details": "\"Comunicarnos\" — Sign Language recognizer built using artificial intelligence through Python and TensorFlow.\n\nhttps://youtu.be/96kEChyVPas"
+        "date": "Aug 2024 - Jan 2025",
+        "brief": "Designed exams for a new master's course and researched enterprise architecture.",
+        "details": "Supervisor: Prof. Jorge Villalobos, Ph.D.\n\nDesigned exams for the new Enterprise Architecture course in the Master's in IT Management (MAIT) and conducted theoretical research on enterprise architecture."
+      }
+    }
+  },
+  "workExperience": {
+    "pageTitle": "Work Experience",
+    "pageSubtitle": "Software and data engineering in industry, from LLM-powered accounts payable to financial data pipelines.",
+    "items": {
+      "work1": {
+        "title": "Software Engineer, Accounts Payable",
+        "subtitle": "Canals AI",
+        "date": "Jan 2026 - Present",
+        "brief": "Develop Canals' AI-powered Accounts Payable product, built on LLM pipelines that read vendor invoices and submit them into distributors' ERPs.",
+        "details": "Canals AI is a fast-growing U.S.-based AI startup (Coral Gables, FL; remote) that automates order processing and accounts payable for industrial wholesale distributors.\n\nDevelop Canals' AI-powered Accounts Payable product, whose LLM pipelines split each vendor invoice into multiple targeted model queries to extract its parts, match them to purchase orders, and submit payables into distributors' ERPs (Eclipse, Infor, P21).\n\nBuilt a secure passwordless review flow for external users, such as customers' approvers without a Canals account, to approve, reject, or comment on expense invoices directly from an email link, using signed links, one-time email codes, device trust, and reCAPTCHA, while reusing the same review interface as logged-in users (TypeScript, PostgreSQL, Svelte).\n\nExtended a customer-configurable rules engine that flags, routes, or blocks AI-processed invoices, adding new exception checks end to end, from backend detection to the settings UI.\n\nHandled 150+ inbound customer tickets, diagnosing and resolving issues reported by distributors."
       },
-      "award3": {
-        "title": "11th Place - National Physics Olympiads",
-        "subtitle": "Universidad Antonio Nariño",
-        "date": "2019",
-        "brief": "11th place overall in the National Physics Olympiads.",
-        "details": "11th place overall in the National Physics Olympiads at Universidad Antonio Nariño."
-      },
-      "award4": {
-        "title": "Best School Participant - National Mathematics Olympiads",
-        "subtitle": "Universidad Antonio Nariño",
-        "date": "2019",
-        "brief": "Best participant from Saint George's School in the National Mathematics Olympiads.",
-        "details": "Saint George's School best participant in the National Mathematics Olympiads at Universidad Antonio Nariño."
-      },
-      "award5": {
-        "title": "13th Place - National Science Olympiads",
-        "subtitle": "Universidad Antonio Nariño",
-        "date": "2018",
-        "brief": "13th place overall in the National Science Olympiads.",
-        "details": "13th place overall in the National Science Olympiads at Universidad Antonio Nariño."
+      "work2": {
+        "title": "Systems and Computing Engineering Intern",
+        "subtitle": "Precia PPV S.A.",
+        "date": "Jan 2025 - May 2025",
+        "brief": "Optimized Python code on AWS Lambda and Glue, and built Power BI dashboards for Colombian Stock Exchange data.",
+        "details": "Optimized Python data-processing code running on AWS Lambda and AWS Glue, improving its performance and efficiency.\n\nHelped develop interactive Power BI dashboards to analyze and visualize Colombian Stock Exchange data.\n\nContributed to the technology team behind Precia's pricing solutions for financial asset valuation in Colombia."
       }
     }
   },
   "teaching": {
     "pageTitle": "Teaching",
-    "pageSubtitle": "From tutor to lecturer — teaching programming and technology at Universidad de los Andes.",
+    "pageSubtitle": "From tutor to lecturer at Universidad de los Andes, and computer vision instructor at The University of Hong Kong's Shanghai campus.",
     "items": {
       "teaching1": {
-        "title": "Adjunct Lecturer - Introduction to Programming with Python",
+        "title": "Adjunct Lecturer, Introduction to Programming (Python)",
         "subtitle": "Universidad de los Andes",
         "date": "Jan 2026 - Present",
         "brief": "Principal instructor for a 25-student course, a role typically reserved for graduate-level faculty.",
-        "details": "Principal Instructor for Introduction to Programming with Python.\n\nLead instruction for a 25-student course covering foundational programming concepts using Python.\n\nSelected for a principal instructional role typically reserved for graduate-level faculty.\n\nDeliver lectures, design exams and programming assignments, and coordinate weekly lab sessions with two teaching assistants."
+        "details": "Principal instructor for a 25-student undergraduate course, a role typically reserved for graduate-level faculty.\n\nDeliver lectures, design exams and programming assignments, and coordinate weekly lab sessions with two teaching assistants.\n\nTopics: programming fundamentals and data processing and visualization with pandas and Matplotlib."
       },
       "teaching2": {
-        "title": "Undergraduate Research Assistant - CupiTaller",
-        "subtitle": "Universidad de los Andes",
-        "date": "Aug 2024 - Feb 2026",
-        "brief": "Managed the programming support center, coordinating 40 tutors and 70 TAs serving 1500+ students.",
-        "details": "Member of the 7-person team responsible for the management and operational oversight of CupiTaller, the University of the Andes' programming support center, under Professor Eduardo Rosales, Ph.D.\n\nManaged the \"Programming in Python\" and \"Introduction to Object Oriented Programming in Java\" courses offered publicly by the University of the Andes on Coursera.\n\nResponsible for managing the schedules of approximately 40 tutors and 70 teaching assistants, overseeing and coordinating a system that allowed over 1500 students to schedule tutoring sessions.\n\nCreated programming problem sets and automated solution verification for Senecode, the University's coding problems webpage.\n\nConducted interviews to assess potential candidates for tutor positions.\n\nMaintained a Discord bot (written in TypeScript) to facilitate remote tutoring sessions.\n\nPart of the team that led the design, development, and maintenance of CupiMonitores, a web application (backend: NestJS, frontend: Next.js) that provides all necessary endpoints for managing teaching assistants, including querying their information, grading them, and handling access control for different user roles."
+        "title": "Organizer, Judge, and Instructor, MeckUp Hackathon",
+        "subtitle": "The University of Hong Kong, Zhangjiang Base (Shanghai)",
+        "date": "Aug 2026",
+        "brief": "Taught computer vision fundamentals to 100+ students aged 10-15 from across China.",
+        "details": "Taught computer vision fundamentals to 100+ students aged 10-15 at the <meckup>MeckUp Hackathon</meckup> (Orbit Odyssey), guiding teams as they trained and deployed their own models on robots.\n\nOrganized and judged the event alongside Match Wai Lun Ko, Assistant Dean at The University of Hong Kong."
       },
       "teaching3": {
-        "title": "Undergraduate Teaching Assistant - IT for Organizations",
-        "subtitle": "Universidad de los Andes",
-        "date": "Aug 2023 - Dec 2023",
-        "brief": "TA for IT in the Organizations, grading assessments and conducting monthly lectures.",
-        "details": "Undergraduate teaching assistant for IT in the Organizations.\n\nCorrected and graded worksheets and assessments.\n\nConducted monthly lectures regarding key concepts of the subject."
-      },
-      "teaching4": {
-        "title": "Teaching Assistant - Introduction to Programming",
-        "subtitle": "Universidad de los Andes",
-        "date": "Jan 2021 - Dec 2023",
-        "brief": "TA for Introduction to Programming, supporting ~40 students per lab and grading programming projects.",
-        "details": "Undergraduate teaching assistant for Introduction to Programming under multiple professors.\n\nProvided support to the professor during programming teaching laboratories, assisting approximately 40 students.\n\nCorrected and graded basic programming projects."
-      },
-      "teaching5": {
-        "title": "Tutor - CupiTaller",
+        "title": "Tutor, CupiTaller",
         "subtitle": "Universidad de los Andes",
         "date": "Feb 2023 - Jun 2023",
-        "brief": "Python tutor at the University's programming support center, assisting 80+ students.",
-        "details": "Python Tutor at CupiTaller, the University of the Andes' programming support center designed for students in their first or second programming course.\n\nConducted daily tutoring sessions.\n\nAssisted more than 80 students in honing fundamental Python coding skills."
+        "brief": "Python tutor at the university's programming support center, helping 80+ students.",
+        "details": "Ran daily Python tutoring sessions at CupiTaller, the university's programming support center, helping 80+ students build programming fundamentals."
+      },
+      "teaching4": {
+        "title": "Teaching Assistant, Introduction to Programming; IT for Organizations",
+        "subtitle": "Universidad de los Andes",
+        "date": "Jan 2021 - Dec 2023",
+        "brief": "Supported labs of about 40 students, graded projects, and gave monthly lectures.",
+        "details": "Supported labs of about 40 students, graded programming projects and assessments, and gave monthly lectures."
       }
     }
   },
   "publications": {
     "pageTitle": "Publications",
-    "pageSubtitle": "Academic and research publications.",
+    "pageSubtitle": "Submitted papers and research publications.",
     "items": {
       "pub1": {
+        "title": "Progressive Course Difficulty Encoding for Student Success Prediction in a Latin American University",
+        "subtitle": "Journal of Learning Analytics (JLA)",
+        "date": "2026",
+        "brief": "Submitted",
+        "details": "Martínez Novoa, S., Soto Parada, E. G., Klopstock Triana, N., Fuquen Flórez, D. A., Hernández Hoyos, M., & Reyes, J. P. (2026).\n\nSubmitted to the Journal of Learning Analytics (JLA)."
+      },
+      "pub2": {
         "title": "Recreating the V-JEPA 2-AC Architecture for Self-Supervised Video Models",
         "subtitle": "Séneca Repositorio Institucional - Universidad de los Andes",
         "date": "Jan 2026",
         "brief": "Undergraduate Thesis",
-        "details": {
-          "availableText": "Available",
-          "linkText": "here",
-          "body": "This project recreates the V-JEPA 2-AC architecture to better understand its self-supervised video learning and action-conditioned prediction capabilities. By analyzing the official Meta implementation, a fully functional local reproduction of both the pretraining and post-training stages was developed, along with a simplified variant of the post-training predictor.\n\nUsing a curated 206-video robotic dataset, all architectures were evaluated on their ability to infer plausible next actions from an initial and a goal frame. The results illustrate the feasibility of reproducing V-JEPA 2-AC locally, highlight the trade-offs introduced by simplification, and provide insight into how energy-based prediction landscapes guide robotic action selection."
-        }
+        "details": "Undergraduate thesis, advised by Prof. Rubén Manrique, Ph.D. Available <thesis>here</thesis>.\n\nThis project recreates the V-JEPA 2-AC architecture to better understand its self-supervised video learning and action-conditioned prediction capabilities. By analyzing the official Meta implementation, a fully functional local reproduction of both the pretraining and post-training stages was developed, along with a simplified variant of the post-training predictor.\n\nUsing a curated 206-video robotic dataset, all architectures were evaluated on their ability to infer plausible next actions from an initial and a goal frame. The results illustrate the feasibility of reproducing V-JEPA 2-AC locally, highlight the trade-offs introduced by simplification, and provide insight into how energy-based prediction landscapes guide robotic action selection."
       }
     }
   }

@@ -2,9 +2,10 @@
 
 import { useLocale, useTranslations } from 'next-intl';
 import { Link, usePathname, useRouter } from '@/i18n/navigation';
-import { Moon, Sun, Linkedin, Mail } from 'lucide-react';
+import { Moon, Sun, Linkedin, Github, Mail, FileDown } from 'lucide-react';
 import { useTheme } from './theme-provider';
 import { motion } from 'motion/react';
+import { CV_PATH } from '@/lib/rich-links';
 
 export function Header() {
   const pathname = usePathname();
@@ -16,9 +17,9 @@ export function Header() {
 
   const tabs = [
     { name: t('home'), path: '/' },
-    { name: t('workExperience'), path: '/work-experience' },
     { name: t('education'), path: '/education' },
-    { name: t('awards'), path: '/awards' },
+    { name: t('research'), path: '/research' },
+    { name: t('workExperience'), path: '/work-experience' },
     { name: t('teaching'), path: '/teaching' },
     { name: t('publications'), path: '/publications' },
   ];
@@ -65,6 +66,25 @@ export function Header() {
             <Linkedin className="h-5 w-5" />
             <span className="sr-only">{tHeader('linkedin')}</span>
           </Link>
+          <Link
+            href="https://github.com/David-Fuq"
+            target="_blank"
+            rel="noreferrer"
+            className="text-foreground/60 hover:text-foreground transition-colors"
+          >
+            <Github className="h-5 w-5" />
+            <span className="sr-only">{tHeader('github')}</span>
+          </Link>
+          {/* Plain <a>: the i18n Link would prefix the locale and break the file path */}
+          <a
+            href={CV_PATH}
+            download
+            title={tHeader('downloadCv')}
+            className="text-foreground/60 hover:text-foreground transition-colors"
+          >
+            <FileDown className="h-5 w-5" />
+            <span className="sr-only">{tHeader('downloadCv')}</span>
+          </a>
           <Link
             href="mailto:fuquendavid@gmail.com"
             className="text-foreground/60 hover:text-foreground transition-colors"

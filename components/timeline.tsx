@@ -90,7 +90,7 @@ export function Timeline({ items }: { items: TimelineItem[] }) {
             <div className="fixed inset-0 flex items-center justify-center z-50 p-4 pointer-events-none">
               <motion.div
                 layoutId={`card-${selectedId}`}
-                className="w-full max-w-lg bg-card rounded-2xl p-6 shadow-xl border border-border pointer-events-auto overflow-hidden relative"
+                className="w-full max-w-2xl max-h-[85vh] flex flex-col bg-card rounded-2xl p-6 shadow-xl border border-border pointer-events-auto overflow-hidden relative"
               >
                 {(() => {
                   const item = items.find((i) => i.id === selectedId);
@@ -103,20 +103,21 @@ export function Timeline({ items }: { items: TimelineItem[] }) {
                       >
                         <X className="w-5 h-5" />
                       </button>
-                      <motion.h3 layoutId={`title-${item.id}`} className="text-2xl font-bold mb-2 pr-8">
+                      <motion.h3 layoutId={`title-${item.id}`} className="shrink-0 text-2xl font-bold mb-2 pr-8">
                         {item.title}
                       </motion.h3>
-                      <motion.p layoutId={`subtitle-${item.id}`} className="text-lg text-muted-foreground mb-2">
+                      <motion.p layoutId={`subtitle-${item.id}`} className="shrink-0 text-lg text-muted-foreground mb-2">
                         {item.subtitle}
                       </motion.p>
-                      <motion.p layoutId={`date-${item.id}`} className="text-sm text-muted-foreground mb-6">
+                      <motion.p layoutId={`date-${item.id}`} className="shrink-0 text-sm text-muted-foreground mb-6">
                         {item.date}
                       </motion.p>
+                      {/* Only the details scroll; the header above stays visible */}
                       <motion.div
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.1 }}
-                        className="prose prose-sm dark:prose-invert max-w-none"
+                        className="prose prose-sm dark:prose-invert max-w-none flex-1 min-h-0 overflow-y-auto overscroll-contain pr-2"
                       >
                         <p className="text-foreground/90 leading-relaxed whitespace-pre-line">
                           {item.details}

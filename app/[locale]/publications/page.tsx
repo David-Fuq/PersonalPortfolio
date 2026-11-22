@@ -1,36 +1,12 @@
 import { getTranslations } from 'next-intl/server';
-import { Timeline, TimelineItem } from '@/components/timeline';
+import { Timeline } from '@/components/timeline';
+import { buildTimelineItems, LOGOS } from '@/lib/timeline-items';
 
 export default async function Publications() {
   const t = await getTranslations('publications');
-
-  const publicationItems: TimelineItem[] = [
-    {
-      id: 'pub-1',
-      title: t('items.pub1.title'),
-      subtitle: t('items.pub1.subtitle'),
-      date: t('items.pub1.date'),
-      brief: t('items.pub1.brief'),
-      details: (
-        <>
-          {t('items.pub1.details.availableText')}{' '}
-          <a
-            href="https://hdl.handle.net/1992/77925"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary underline underline-offset-4"
-          >
-            {t('items.pub1.details.linkText')}
-          </a>
-          .
-          <br />
-          <br />
-          {t('items.pub1.details.body')}
-        </>
-      ),
-      imageUrl: '/University_of_Los_Andes_logo.svg',
-    },
-  ];
+  const publicationItems = buildTimelineItems(t, ['pub1', 'pub2'], {
+    pub2: LOGOS.uniandes,
+  });
 
   return (
     <div className="py-12">
