@@ -65,7 +65,7 @@ export function Timeline({ items }: { items: TimelineItem[] }) {
                     src={item.imageUrl}
                     alt={item.title}
                     fill
-                    className="rounded-full object-cover p-1"
+                    className="rounded-full bg-white object-contain p-1"
                     referrerPolicy="no-referrer"
                   />
                 ) : (

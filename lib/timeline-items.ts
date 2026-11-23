@@ -7,6 +7,11 @@ type Translator = Awaited<ReturnType<typeof getTranslations>>;
 // Logos shown in the timeline's center dot (files in /public).
 export const LOGOS = {
   uniandes: '/University_of_Los_Andes_logo.svg',
+  cornell: '/Cornell_University_seal.svg.png',
+  polimi: '/Logo_Politecnico_Milano-2.png',
+  hku: '/University_of_Hong_Kong.svg.webp',
+  canals: '/canals_ai_logo.png',
+  precia: '/preciappv_logo.jpg',
 };
 
 /**

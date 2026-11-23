@@ -6,6 +6,7 @@ export default async function Teaching() {
   const t = await getTranslations('teaching');
   const teachingItems = buildTimelineItems(t, ['teaching1', 'teaching2', 'teaching3', 'teaching4'], {
     teaching1: LOGOS.uniandes,
+    teaching2: LOGOS.hku,
     teaching3: LOGOS.uniandes,
     teaching4: LOGOS.uniandes,
   });

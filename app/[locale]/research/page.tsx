@@ -5,6 +5,9 @@ import { buildTimelineItems, LOGOS } from '@/lib/timeline-items';
 export default async function Research() {
   const t = await getTranslations('research');
   const researchItems = buildTimelineItems(t, ['res1', 'res2', 'res3', 'res4', 'res5'], {
+    res1: LOGOS.cornell,
+    res2: LOGOS.cornell,
+    res3: LOGOS.cornell,
     res4: LOGOS.uniandes,
     res5: LOGOS.uniandes,
   });

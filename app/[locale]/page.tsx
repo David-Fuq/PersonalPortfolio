@@ -72,14 +72,14 @@ export default function Home() {
         transition={{ duration: 0.6, ease: 'easeOut' }}
         className="flex flex-col md:flex-row items-center gap-8 md:gap-16 w-full max-w-4xl mb-24"
       >
-        <div className="relative w-48 h-48 md:w-64 md:h-64 shrink-0">
+        <div className="relative w-60 h-60 md:w-80 md:h-80 shrink-0">
           <div className="absolute inset-0 bg-gradient-to-tr from-primary to-primary/20 rounded-full blur-2xl opacity-50 animate-pulse" />
           <Image
-            src="https://picsum.photos/seed/portrait/400/400"
+            src="/david_portrait.jpg"
             alt={t('hero.profileAlt')}
             fill
+            sizes="(min-width: 768px) 320px, 240px"
             className="rounded-full object-cover border-4 border-background relative z-10 shadow-xl"
-            referrerPolicy="no-referrer"
             priority
           />
         </div>

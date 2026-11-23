@@ -6,6 +6,7 @@ export default async function Education() {
   const t = await getTranslations('education');
   const educationItems = buildTimelineItems(t, ['edu1', 'edu2'], {
     edu1: LOGOS.uniandes,
+    edu2: LOGOS.polimi,
   });
 
   return (

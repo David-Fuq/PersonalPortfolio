@@ -1,10 +1,13 @@
 import { getTranslations } from 'next-intl/server';
 import { Timeline } from '@/components/timeline';
-import { buildTimelineItems } from '@/lib/timeline-items';
+import { buildTimelineItems, LOGOS } from '@/lib/timeline-items';
 
 export default async function WorkExperience() {
   const t = await getTranslations('workExperience');
-  const workItems = buildTimelineItems(t, ['work1', 'work2']);
+  const workItems = buildTimelineItems(t, ['work1', 'work2'], {
+    work1: LOGOS.canals,
+    work2: LOGOS.precia,
+  });
 
   return (
     <div className="py-12">
